@@ -1,0 +1,513 @@
+/*---Google Fonts---*/
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&display=swap');
+/*---Parametros Iniciales---*/
+*{  
+margin: 0;
+padding: 0;    
+}
+/*---Body---*/
+body
+{
+    font-family: 'Carter One', sans-serif;        
+}
+/*---Header---*/
+.encabezado
+{   
+    background-image: linear-gradient(to right,#030a2b,#3b0505);    
+    width: 100%;
+    height: 5vh;
+}
+a
+{
+    text-decoration: none;
+    color: white;    
+}
+ul
+{    
+    list-style-type: none;   
+    font-size: 0;
+}
+li
+{
+    display: inline-block;
+    width: 9%;    
+    position: relative;
+    top: 3px;
+    left: 200px;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: -6px 0px 3px black;
+}
+         
+ul ul
+{
+    position: absolute;
+    display: none;
+}
+.subBotones
+{
+    display: block;
+    display: inline-block;
+    width: 110%;    
+    position: relative;
+    top: 5px;
+    left: -10px;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: -6px 0px 3px black;
+    margin:5px;
+    padding: 0px;
+    border: inset 5px white;
+    transition: all 0.5s;
+}
+.subBotones:hover
+{
+    background-color:#4b0909;   
+}
+ul li:hover ul
+ {
+    display:block;
+ } 
+.botones
+{
+    margin:5px;
+    padding: 0px;
+    border: inset 5px white;
+    transition: ease 0.5s;
+}
+.botones:hover
+{    
+    background-color: #4b0909;
+    border: black;
+    border-radius: 20%;
+}
+.juegaGratis
+{
+    position: relative;
+    left: 1250px;
+    transition: ease 0.5s;
+}
+.juegaGratis:hover
+{
+    background-color: #040d3b;
+    border: black;
+    border-radius: 20%;
+}
+.logoIndex
+{
+    height:50px;
+    width: 50px;
+    position: relative;
+    top: -50px;
+    left:15px;
+    z-index: 1;
+    transition: ease height 0.5s;
+    transition: ease width 0.5s;    
+}
+.logoIndex:hover
+{    
+    width: 150px;
+    height: 150px;   
+}
+/*---Main---*/
+main
+{   
+    background-color: #040821;
+    width: 100%;
+    height: 55vh;    
+}
+.titulo
+{
+    color: #8A0E0E;
+    font-size: 100px;
+    text-shadow: -6px 0px 3px black;
+    letter-spacing: 3px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    z-index: 1; 
+    
+}
+.subtitulos
+{
+    color:#8A0E0E;
+    font-size: 70px;
+    text-shadow: -6px 0px 3px black;
+    letter-spacing: 3px;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    font-family: 'Bangers',sans-serif;    
+}
+.imagenBkg
+{    
+    background-image:url("../Imagenes/fondoindex.jpg") ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 1000px;
+    position: relative;
+    top: -257px;
+}
+.parrafoVideo
+{
+    font-size: 100px;    
+    color:#8A0E0E;
+    text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
+    font-family: 'Bangers',sans-serif;    
+    letter-spacing: 3px;
+    text-align: center;
+    position: relative;
+    top: 700px;   
+    z-index: 1;
+}
+.parrafoPresentacion
+{
+    font-size: 50px;    
+    color:white;
+    text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
+    font-family: 'Bangers',sans-serif;    
+    letter-spacing: 3px;
+    text-align: center;
+    position: relative;
+    top: 400px;   
+}
+.textoGrande
+{
+    font-size: 80px ;
+}
+.juegaGratisBoton
+{    
+    font-size: 30px;
+    text-align: center;
+    width: 30%;
+    height: 50px;    
+    margin: 5px;
+    padding: 0px;
+    border: inset 5px white;
+    position: relative;
+    top: 70px;
+    left: 700px;
+    z-index: 1; 
+    transition: all 0.5s;
+}
+.juegaGratisBoton:hover
+{
+    background-color: #4b0909;
+    border: black;
+    border-radius: 20%;
+}
+.videoIndex
+{
+    position: relative;
+    top: -250px;    
+    width: 100%;        
+}
+.contenidoVideo
+{
+    background-color: #040821;
+}
+/*---Footer---*/
+footer
+{
+    background-image: linear-gradient(to left,#030a2b,#3b0505);   
+    width: 100%;
+    height: 5vh;
+    position: relative;
+    top: 1625px;
+}
+.footerImg
+{        
+    width: 40px; 
+    height: 40px;
+    margin: 2px;
+    border:solid 5px black;
+}
+.redesFooter
+{
+    display: flex;
+    justify-content:center;
+}
+.textoFooter
+{
+    font-size: 30px;    
+    color:white;
+    text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
+    font-family: 'Bangers',sans-serif;    
+    letter-spacing: 3px;
+    text-align: center;
+    position: relative;
+    left: -10px;
+    top: 10px;
+    
+}
+/*---Otras Paginas---*/
+.titulosPaginas
+{
+    color:#8A0E0E;
+    font-size: 70px;
+    text-shadow: -6px 0px 3px black;
+    letter-spacing: 3px;
+    text-align: center; 
+    font-family: 'Bangers',sans-serif;        
+}
+/*---Pagina Heroes---*/
+.heroes
+{
+   width: 400px;
+   height: 200px;     
+   border: solid 5px white;
+   transition: height 1.5s;
+   transition: width 1.5s; 
+}
+.heroes:hover
+{
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.479);
+    width: 500px;
+    height: 250px;
+}
+.revenant
+{
+    font-size: 50px;    
+    color:white;
+    text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
+    font-family: 'Bangers',sans-serif;    
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 60px;
+    
+}
+.sevarog
+{
+    font-size: 50px;    
+    color:white;
+    text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
+    font-family: 'Bangers',sans-serif;    
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 60px;    
+}
+.wraith
+{
+    font-size: 50px;    
+    color:white;
+    text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
+    font-family: 'Bangers',sans-serif;    
+    letter-spacing: 3px;
+    text-align: center;   
+    margin: 60px; 
+}
+#gridHeroes
+{
+    display: grid;
+    grid-template-areas:
+    "cabecera cabecera cabecera"/*1 fila*/
+    "heroes heroes heroes" /*2 fila*/
+    "villanos villanos villanos"/*3 fila*/
+    "pie pie pie"/*4 fila*/
+    ;
+    grid-template-columns: 33.3% 33.3% 33.3%;    
+    grid-template-rows: 50px 450px 450px 50px;
+}
+#heroes
+{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;       
+    grid-area: heroes;
+    background-color:rgb(15, 17, 31);
+    width: 100%;
+    height: 50vh;
+}
+#villanos
+{    
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;  
+    grid-area: villanos;
+    background-color:rgb(15, 17, 31);
+    width: 100%;
+    height: 50vh;
+}
+#cabecera
+{
+    grid-area: cabecera;   
+}
+#pieHeroes
+{
+    grid-area: pie;
+    top: 60px;    
+}
+/*---Pagina Actualizaciones---*/
+#gridActualizaciones
+{
+    display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "actualizaciones"
+    "pie"
+    ;
+}
+#mainActualizaciones
+{
+    grid-area: actualizaciones;
+    background-color:rgb(15, 17, 31);
+    width: 100%;
+    height: 90vh;
+}
+#pieActualizaciones
+{
+    grid-area: pie;
+    top: 0px;
+}
+.padreFlex
+{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;    
+}
+.actualizaciones
+{    
+    background-color: #2b0404;
+    font-size: 20px;    
+    color:grey;
+    text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
+    font-family: 'Bangers',sans-serif;    
+    letter-spacing: 3px;
+    text-align: center;
+    position: relative;
+    height: 50px;
+    top: 0px;
+    padding: 5px;
+    margin: 30px;
+}
+.textoActualizaciones
+{
+    text-align: center;
+    color:white;
+}
+/*---Pagina Noticias---*/
+#gridNoticias
+{
+    display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "noticias"
+    "pie"
+    ;
+}
+#mainNoticias
+{
+    grid-area: noticias;
+    background-color:rgb(15, 17, 31);
+    width: 100%;
+    height: 90vh;
+}
+#pieNoticias
+{
+    grid-area: pie;
+    top: 0px;
+}
+.tabla
+{    
+   color:white;    
+   width: 2125px;   
+}
+.subtitulosNoticias
+{
+    color:#8A0E0E;
+    font-size: 50px;
+    text-shadow: -6px 0px 3px black;
+    letter-spacing: 3px;
+    text-align: center; 
+    font-family: 'Bangers',sans-serif; 
+}
+.parrafoNoticias
+{
+    font-size: 30px;    
+    color:white;
+    text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
+    font-family: 'Bangers',sans-serif;    
+    letter-spacing: 3px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+.noticiasContenedor
+{
+    background-color: #2b0404;
+    font-size: 20px;    
+    color:grey;
+    text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
+    font-family: 'Bangers',sans-serif;    
+    letter-spacing: 3px;
+    text-align: center;
+    position: relative;
+    height: 50px;
+    top: 0px;
+    padding: 5px;
+    margin: 30px;
+}
+.tituloTabla
+{
+    font-size: 35px;    
+}
+/*---Pagina Contacto---*/
+#gridContacto
+{
+    display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "contacto"
+    "pie"
+    ;
+}
+#mainContacto
+{
+    grid-area: contacto;
+    background-color:rgb(15, 17, 31);
+    width: 100%;
+    height: 90vh;
+}
+#pieContacto
+{
+    grid-area: pie;
+    top: 0px;
+}
+.contacto
+{
+    color:white;
+    text-align: center;
+}
+/*---Juega Gratis---*/
+#gridJuegaGratis
+{
+    display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "juegagratis"
+    "pie"
+    ;
+}
+#mainJuegaGratis
+{
+    grid-area: juegagratis;
+    background-color:rgb(15, 17, 31);
+    width: 100%;
+    height: 90vh;
+}
+#pieJuegaGratis
+{
+    grid-area: pie;
+    top: 0px;
+}
+.bkgJuegaGratis
+{
+    background-image:url("../Imagenes/FondoJugarJuego.jpg") ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 1000px;
+}

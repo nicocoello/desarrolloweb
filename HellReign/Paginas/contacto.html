@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-----------------Head------------------------>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../Css/style.css" />
+</head>
+<!-----------------Body------------------------>
+
+<body>
+    <!-----------------Header------------------------>
+    <div id="gridContacto">
+        <header class="encabezado">
+            <nav>
+                <ul>
+                    <li class="botones"><a href=../Paginas/heroes.html>Heroes</a></li>
+                    <li class="botones"><a href=../Paginas/noticias.html>Noticias</a>
+                        <ul>
+                            <li class="subBotones"><a href=../Paginas/actualizaciones.html>Actualizaciones</a></li>
+                        </ul>
+                    </li>
+                    <li class="botones"><a href=../Paginas/contacto.html>Contacto</a></li>
+                    <li class="botones juegaGratis"><a href=../Paginas/juegagratis.html>Juega Gratis</a></li>
+                </ul>
+            </nav>
+            <a href=../index.html><img class="logoIndex" src="../Imagenes/HellReignLogo.png" alt="LogoEncabezado"></a>
+        </header>
+        <!-----------------Main------------------------>
+        <section id="mainContacto">
+            <h1 class="titulosPaginas">Contacto</h1>
+            <form class="contacto" action="" method="POST" enctype="text/plain">
+                <fieldset>
+                    <legend>Complete los datos requeridos del formulario</legend>
+                    <label for="mail">E-mail</label>"
+                    <input type="email" name="mail" placeholder="username@correo.com">
+                    <br>
+                    <br>
+                    <label for="sistemaoperativo">Sistema Operativo</label>
+                    <select name=sistemaoperativo>
+                        <option value="Windows">Windows</option>
+                        <option value="Mac">Mac</option>
+                        <option value="Linux">Linux</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="solicitud">Solicitud</label>
+                    <textarea rows="5" cols="30" name="solicitud"></textarea>
+                    <br>
+                    <br>
+                    <input type="reset" value="Cancelar Solicitud" />
+                    <input type="submit" value="Enviar Solicitud" />
+                </fieldset>
+            </form>
+        </section>
+        <!-----------------Footer------------------------>
+        <footer class="redesFooter" id="pieContacto">
+            <p class="textoFooter">SEGUI A HELLREIGN</p>
+            <a href="https://facebook.com/"><img class="footerImg" src="../Imagenes/logofacebook.png"
+                    alt="Facebook"></a>
+            <a href="https://twitter.com/"><img class="footerImg" src="../Imagenes/logotwitter.png" alt="Twitter"></a>
+            <a href="https://youtube.com/"><img class="footerImg" src="../Imagenes/logoyoutube.png" alt="Youtube"></a>
+        </footer>
+    </div>
+</body>
+
+</html>
