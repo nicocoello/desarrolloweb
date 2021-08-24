@@ -85,7 +85,7 @@ ul li:hover ul
 .juegaGratis
 {
     position: relative;
-    left: 1250px;
+    left: 1200px;
     transition: ease 0.5s;
 }
 .juegaGratis:hover
@@ -382,7 +382,7 @@ footer
     height: 50px;
     top: 0px;
     padding: 5px;
-    margin: 30px;
+    margin: 20px;
 }
 .textoActualizaciones
 {
@@ -449,7 +449,7 @@ footer
     height: 50px;
     top: 0px;
     padding: 5px;
-    margin: 30px;
+    margin: 20px;
 }
 .tituloTabla
 {
