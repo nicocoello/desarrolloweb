@@ -14,7 +14,7 @@ body
 /*---Header---*/
 .encabezado
 {   
-    background-image: linear-gradient(to right,#030a2b,#3b0505);    
+    background-image: linear-gradient(to right,#02061d,#02061d);    
     width: 100%;
     height: 5vh;
 }
@@ -45,27 +45,79 @@ ul ul
     position: absolute;
     display: none;
 }
-.subBotones
-{
-    display: block;
-    display: inline-block;
-    width: 110%;    
-    position: relative;
-    top: 5px;
-    left: -10px;
-    font-size: 20px;
-    text-align: center;
-    text-shadow: -6px 0px 3px black;
+.botonHeroes
+{    
+    background-color: #3b0505;
+    text-align:center;
+    font-size: 27px;  
+    text-shadow: -6px 0px 3px black; 
+    width: 200px;
+    height: 45px;
     margin:5px;
-    padding: 0px;
-    border: inset 5px white;
-    transition: all 0.5s;
+    padding: 0px;    
+    transition: ease 0.5s;
+    position: relative;
+    left: 125px;
 }
-.subBotones:hover
+.botonNoticias
 {
-    background-color:#4b0909;   
+    background-color: #3b0505;
+    text-align:center;
+    font-size: 27px;  
+    text-shadow: -6px 0px 3px black; 
+    width: 200px;
+    height: 45px;
+    margin:5px;
+    padding: 0px;    
+    transition: ease 0.5s;
+    position: relative;
+    left: 150px;
 }
-ul li:hover ul
+.botonActualizaciones
+{       
+    background-color: #3b0505;
+    text-align:center;
+    font-size: 27px;  
+    text-shadow: -6px 0px 3px black; 
+    width: 220px;
+    height: 45px;
+    margin:5px;
+    padding: 0px;    
+    transition: ease 0.5s;
+    position: relative;
+    left: 175px;
+}
+.botonContacto
+{
+    background-color: #3b0505;
+    text-align:center;
+    font-size: 27px;  
+    text-shadow: -6px 0px 3px black; 
+    width: 200px;
+    height: 45px;
+    margin:5px;
+    padding: 0px;    
+    transition: ease 0.5s;
+    position: relative;
+    left: 200px;
+}
+.botonJuegaGratis
+{
+    background-color:#3b0505;
+    text-align:center;
+    font-size: 27px;  
+    text-shadow: -6px 0px 3px black; 
+    width: 200px;
+    height: 45px;
+    margin:5px;
+    padding: 0px;    
+    transition: ease 0.5s;
+    position: relative;
+    left: 950px;
+}
+
+
+ul a:hover ul
  {
     display:block;
  } 
@@ -115,7 +167,7 @@ main
 {   
     background-color: #040821;
     width: 100%;
-    height: 55vh;    
+    height: 30vh;    
 }
 .titulo
 {
@@ -125,9 +177,8 @@ main
     letter-spacing: 3px;
     text-align: center;
     position: relative;
-    top: 50px;
-    z-index: 1; 
-    
+    top: 90px;
+    z-index: 1;    
 }
 .subtitulos
 {
@@ -147,7 +198,7 @@ main
     background-size:cover;
     height: 1000px;
     position: relative;
-    top: -257px;
+    top: -300px;
 }
 .parrafoVideo
 {
@@ -176,31 +227,26 @@ main
 {
     font-size: 80px ;
 }
-.juegaGratisBoton
-{    
-    font-size: 30px;
-    text-align: center;
-    width: 30%;
-    height: 50px;    
-    margin: 5px;
-    padding: 0px;
-    border: inset 5px white;
+.botonJuegaAhora
+{   
+    background-color:#3b0505;
+    text-align:center;
+    font-size: 50px;  
+    text-shadow: -6px 0px 3px black; 
+    width: 400px;
+    height: 75px;
+    margin:5px;
+    padding: 0px;    
+    transition: ease 0.5s;
     position: relative;
-    top: 70px;
-    left: 700px;
+    left: 830px;
+    top: 100px;
     z-index: 1; 
-    transition: all 0.5s;
-}
-.juegaGratisBoton:hover
-{
-    background-color: #4b0909;
-    border: black;
-    border-radius: 20%;
 }
 .videoIndex
 {
     position: relative;
-    top: -250px;    
+    top: -300px;    
     width: 100%;        
 }
 .contenidoVideo
@@ -210,24 +256,19 @@ main
 /*---Footer---*/
 footer
 {
-    background-image: linear-gradient(to left,#030a2b,#3b0505);   
+    background-image: linear-gradient(to right,#02061d,#02061d);  
     width: 100%;
     height: 5vh;
     position: relative;
-    top: 1625px;
+    top: 1900px;
 }
 .footerImg
 {        
-    width: 40px; 
-    height: 40px;
-    margin: 2px;
-    border:solid 5px black;
+    width: 50px; 
+    height: 45px;   
+   
 }
-.redesFooter
-{
-    display: flex;
-    justify-content:center;
-}
+
 .textoFooter
 {
     font-size: 30px;    
@@ -240,6 +281,45 @@ footer
     left: -10px;
     top: 10px;
     
+}
+.botonFacebook
+{
+    background-color: white; 
+    text-shadow: -6px 0px 3px black; 
+    width: 50px;
+    height: 45px;
+    margin:5px;
+    padding: 0px;    
+    transition: ease 0.5s;
+    position: relative;
+    top: -60px;
+    left: 1200px;
+}
+.botonTwitter
+{
+    background-color:white;   
+    text-shadow: -6px 0px 3px black; 
+    width: 50px;
+    height: 45px;
+    margin:5px;
+    padding: 0px;    
+    transition: ease 0.5s;
+    position: relative;
+    top: -60px;
+    left: 1210px;
+}
+.botonYoutube
+{
+    background-color:white;    
+    text-shadow: -6px 0px 3px black; 
+    width: 50px;
+    height: 45px;
+    margin:5px;
+    padding: 0px;    
+    transition: ease 0.5s;
+    position: relative;
+    top: -60px;
+    left: 1220px;
 }
 /*---Otras Paginas---*/
 .titulosPaginas

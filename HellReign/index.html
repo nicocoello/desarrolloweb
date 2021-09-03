@@ -7,37 +7,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HellReign</title>
+    <!--BOOTSTRAP ONLINE-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="Css/style.css" />
 </head>
 <!-----------------Body------------------------>
 
 <body>
     <!-----------------Header------------------------>
-    <header class="encabezado">
+    <header class="encabezado container-fluid">
         <nav>
             <ul>
-                <li class="botones"><a href=Paginas/heroes.html>Heroes</a></li>
-                <li class="botones"><a href=Paginas/noticias.html>Noticias</a>
-                    <ul>
-                        <li class="subBotones"><a href=Paginas/actualizaciones.html>Actualizaciones</a></li>
-                    </ul>
-                </li>
-                <li class="botones"><a href=Paginas/contacto.html>Contacto</a></li>
-                <li class="botones juegaGratis"><a href=Paginas/juegagratis.html>Juega Gratis</a></li>
+                <a class="botonHeroes btn btn-dark" href=Paginas/heroes.html role="button">Heroes</a>
+                <a class="botonNoticias btn btn-dark" href=Paginas/noticias.html role="button">Noticias</a>
+                <a class="botonActualizaciones btn btn-dark" href=Paginas/actualizaciones.html role="button">
+                    Actualizaciones</a>
+                <a class="botonContacto btn btn-dark" href=Paginas/contacto.html role="button">Contacto</a>
+                <a class="botonJuegaGratis btn btn-dark" href=Paginas/juegagratis.html role="button">Juega Gratis</a>
             </ul>
         </nav>
         <a href=index.html><img class="logoIndex" src="Imagenes/HellReignLogo.png" alt="LogoEncabezado"></a>
     </header>
     <!-----------------Main------------------------>
     <main>
-        <section class="contenidoVideo">
+        <section class="contenidoVideo container-fluid">
             <h1 class="titulo">HellReign</h1>
-            <div class="juegaGratisBoton"><a href=Paginas/juegagratis.html>Juega Ahora</a></div>
+            <div><a class="botonJuegaAhora btn btn-dark" href=Paginas/juegagratis.html role="button">Juega Ahora</a>
+            </div>
             <p class="parrafoVideo">LANZAMIENTO OFICIAL: ENERO 2022</p>
-            <video class="videoIndex" autoplay="autoplay" loop="loop" muted="muted"
+            <video class="videoIndex col-sm-12 col-md-12 col-lg-12" autoplay="autoplay" loop="loop" muted="muted"
                 poster="Imagenes/postervideoindex.jpg" source src="Imagenes/videoIndex2.mp4" type="video/mp4"></video>
         </section>
-        <section class="imagenBkg">
+        <section class="imagenBkg container-fluid">
             <h2 class="subtitulos">Unete A Grandes Batallas</h2>
             <p class="parrafoPresentacion">CADA DÍA, JUGADORES DE TODO EL MUNDO ENTRAN EN
                 BATALLA CONTRA DIVERSOS JEFES QUE BUSCARAN
@@ -47,11 +49,14 @@
         </section>
     </main>
     <!-----------------Footer------------------------>
-    <footer class="redesFooter">
+    <footer class="redesFooter container-fluid">
         <p class="textoFooter">SEGUI A HELLREIGN</p>
-        <a href="https://facebook.com/"><img class="footerImg" src="Imagenes/logofacebook.png" alt="Facebook"></a>
-        <a href="https://twitter.com/"><img class="footerImg" src="Imagenes/logotwitter.png" alt="Twitter"></a>
-        <a href="https://youtube.com/"><img class="footerImg" src="Imagenes/logoyoutube.png" alt="Youtube"></a>
+        <a class="botonFacebook btn btn-dark" href="https://facebook.com/" role="button"><img class="footerImg"
+                src="Imagenes/facebook.svg" alt="Facebook"></a>
+        <a class="botonTwitter btn btn-dark" href="https://twitter.com/" role="button"><img class="footerImg"
+                src="Imagenes/twitter.svg" alt="Twitter"></a>
+        <a class="botonYoutube btn btn-dark" href="https://youtube.com/" role="button"><img class="footerImg"
+                src="Imagenes/youtube.svg" alt="Youtube"></a>
     </footer>
 </body>
 
