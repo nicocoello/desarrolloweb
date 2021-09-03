@@ -469,6 +469,29 @@ footer
     text-align: center;
     color:white;
 }
+.accordion
+{
+    position: relative;
+    top: 50px;
+}
+.accordion-item
+{
+    background-color: #3b0505;
+}
+.accordion-button
+{   
+    width: 500px;
+    font-size: 25px;
+    color: white;    
+    background-color: #3b0505;
+}
+.accordion-collapse
+{
+    width: 500px;
+    font-size: 20px;
+    color: white;    
+    background-color: #3b0505;
+}
 /*---Pagina Noticias---*/
 #gridNoticias
 {

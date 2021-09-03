@@ -6,80 +6,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heroes</title>
-
+    <title>Actualizaciones</title>
+    <!--BOOTSTRAP ONLINE-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="../Css/style.css" />
 </head>
 <!-----------------Body------------------------>
 
 <body>
     <!-----------------Header------------------------>
-    <div id="gridActualizaciones">
-        <header class="encabezado">
-            <nav>
-                <ul>
-                    <li class="botones"><a href=../Paginas/heroes.html>Heroes</a></li>
-                    <li class="botones"><a href=../Paginas/noticias.html>Noticias</a>
-                        <ul>
-                            <li class="subBotones"><a href=../Paginas/actualizaciones.html>Actualizaciones</a></li>
-                        </ul>
-                    </li>
-                    <li class="botones"><a href=../Paginas/contacto.html>Contacto</a></li>
-                    <li class="botones juegaGratis"><a href=../Paginas/juegagratis.html>Juega Gratis</a></li>
-                </ul>
-            </nav>
-            <a href=../index.html><img class="logoIndex" src="../Imagenes/HellReignLogo.png" alt="LogoEncabezado"></a>
-        </header>
-        <!-----------------Main------------------------>
-        <main id="mainActualizaciones">
-            <h1 class="titulosPaginas">Actualizaciones</h1>
-            <section class="padreFlex">
-                <div class="actualizaciones">15 de Agosto de 2021
-                    <p class="textoActualizaciones">Correccion de errores dentro del juego. Mejoras en el rendimiento
-                        del
-                        cliente.</p>
-                </div>
-                <div class="actualizaciones">1 de Agosto de 2021
-                    <p class="textoActualizaciones">Correccion de errores dentro del juego. Mejoras en el rendimiento
-                        del
-                        cliente.</p>
-                </div>
-                <div class="actualizaciones">31 de Julio de 2021
-                    <p class="textoActualizaciones">Correccion de errores dentro del juego. Mejoras en el rendimiento
-                        del
-                        cliente.</p>
-                </div>
-                <div class="actualizaciones">15 de Julio de 2021
-                    <p class="textoActualizaciones">Correccion de errores dentro del juego. Mejoras en el rendimiento
-                        del
-                        cliente.</p>
-                </div>
-                <div class="actualizaciones">1 de Julio de 2021
-                    <p class="textoActualizaciones">Correccion de errores dentro del juego. Mejoras en el rendimiento
-                        del
-                        cliente.</p>
-                </div>
-                <div class="actualizaciones">30 de Junio de 2021
-                    <p class="textoActualizaciones">Correccion de errores dentro del juego. Mejoras en el rendimiento
-                        del
-                        cliente.</p>
-                </div>
-                <div class="actualizaciones">15 de Junio de 2021
-                    <p class="textoActualizaciones">Correccion de errores dentro del juego. Mejoras en el rendimiento
-                        del
-                        cliente.</p>
-                </div>
-            </section>
-        </main>
-        <!-----------------Footer------------------------>
-        <footer class="redesFooter" id="pieActualizaciones">
-            <p class="textoFooter">SEGUI A HELLREIGN</p>
-            <a href="https://facebook.com/"><img class="footerImg" src="../Imagenes/logofacebook.png"
-                    alt="Facebook"></a>
-            <a href="https://twitter.com/"><img class="footerImg" src="../Imagenes/logotwitter.png" alt="Twitter"></a>
-            <a href="https://youtube.com/"><img class="footerImg" src="../Imagenes/logoyoutube.png" alt="Youtube"></a>
-        </footer>
-    </div>
+    <section class="container-fluid">
+        <div id="gridActualizaciones">
+            <header class="encabezado">
+                <nav>
+                    <ul>
+                        <a class="botonHeroes btn btn-dark" href=../Paginas/heroes.html role="button">Heroes</a>
+                        <a class="botonNoticias btn btn-dark" href=../Paginas/noticias.html role="button">Noticias</a>
+                        <a class="botonActualizaciones btn btn-dark" href=../Paginas/actualizaciones.html role="button">
+                            Actualizaciones</a>
+                        <a class="botonContacto btn btn-dark" href=../Paginas/contacto.html role="button">Contacto</a>
+                        <a class="botonJuegaGratis btn btn-dark" href=../Paginas/juegagratis.html role="button">Juega
+                            Gratis</a>
+                    </ul>
+                </nav>
+                <a href=index.html><img class="logoIndex" src="../Imagenes/HellReignLogo.png" alt="LogoEncabezado"></a>
+            </header>
+            <!-----------------Main------------------------>
+            <main id="mainActualizaciones">
+                <h1 class="titulosPaginas">Actualizaciones</h1>
+                <section class="padreFlex">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Septiembre 2021
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>AJUSTES AL PODER DEL EQUIPO JCJ</strong>
+                                    <br>
+                                    Ahora el equipo JcJ de nivel de objeto más bajo se ajustará a un nivel de objeto más
+                                    alto en combate JcJ. Este cambio reducirá la diferencia de nivel de poder para que
+                                    los
+                                    personajes nuevos puedan participar en campos de batalla y arenas más fácilmente.
+                                    Este
+                                    cambio no afectará al equipo JcJ de nivel de objeto elevado.
+                                    <br>
+                                    Correccion de errores dentro del juego.
+                                    <br>
+                                    Mejoras en el rendimiento del cliente.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Agosto 2021
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong> PERSONALIZACIÓN DE PERSONAJES</strong>
+                                    <br>
+                                    Vamos a implementar una serie de personalizaciones de personaje nuevas tanto para
+                                    los
+                                    heroes como para los villanos. Esto incluye actualizaciones adicionales
+                                    para el tamaño de las armas, nuevos colores de habilidades y skins personalizadas.
+                                    <br>
+                                    Correccion de errores dentro del juego.
+                                    <br>
+                                    Mejoras en el rendimiento del cliente.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Julio 2021
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>LANZAMIENTO OFICIAL DE VERSION ALPHA</strong>
+                                    <br>
+                                    Correccion de errores dentro del juego. Mejoras en el rendimiento del cliente.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-----------------Footer------------------------>
+            <footer class="redesFooter container-fluid" id="pieActualizaciones">
+                <p class="textoFooter">SEGUI A HELLREIGN</p>
+                <a class="botonFacebook btn btn-dark" href="https://facebook.com/" role="button"><img class="footerImg"
+                        src="../Imagenes/facebook.svg" alt="Facebook"></a>
+                <a class="botonTwitter btn btn-dark" href="https://twitter.com/" role="button"><img class="footerImg"
+                        src="../Imagenes/twitter.svg" alt="Twitter"></a>
+                <a class="botonYoutube btn btn-dark" href="https://youtube.com/" role="button"><img class="footerImg"
+                        src="../Imagenes/youtube.svg" alt="Youtube"></a>
+            </footer>
+        </div>
+    </section>
+    <!-------------BOOTSTRAP + JAVASCRIPT------------>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
