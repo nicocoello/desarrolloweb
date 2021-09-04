@@ -12,155 +12,50 @@ body
     font-family: 'Carter One', sans-serif;        
 }
 /*---Header---*/
-.encabezado
-{   
-    background-image: linear-gradient(to right,#02061d,#02061d);    
-    width: 100%;
-    height: 5vh;
-}
-a
+.container-fluid
 {
-    text-decoration: none;
-    color: white;    
+    background-color:#040821;
 }
-ul
-{    
-    list-style-type: none;   
-    font-size: 0;
-}
-li
-{
-    display: inline-block;
-    width: 9%;    
+.nav-item
+{  
+    background-color: #2b0404;   
+    transition: ease 0.5s;
+}  
+
+#navbarDropdown
+{  
+    font-size: 27px; 
+    text-align: center; 
+    color: white;
     position: relative;
-    top: 3px;
-    left: 200px;
-    font-size: 20px;
+    top: 8px;
+}
+.textoBotones
+{
+    font-size: 27px;
+    color: white;
     text-align: center;
-    text-shadow: -6px 0px 3px black;
-}
-         
-ul ul
-{
-    position: absolute;
-    display: none;
-}
-.botonHeroes
-{    
-    background-color: #3b0505;
-    text-align:center;
-    font-size: 27px;  
-    text-shadow: -6px 0px 3px black; 
-    width: 200px;
-    height: 45px;
-    margin:5px;
-    padding: 0px;    
-    transition: ease 0.5s;
     position: relative;
-    left: 125px;
+    top: 8px;
 }
-.botonNoticias
+.navbar-brand
 {
-    background-color: #3b0505;
-    text-align:center;
-    font-size: 27px;  
-    text-shadow: -6px 0px 3px black; 
-    width: 200px;
-    height: 45px;
-    margin:5px;
-    padding: 0px;    
-    transition: ease 0.5s;
-    position: relative;
-    left: 150px;
-}
-.botonActualizaciones
-{       
-    background-color: #3b0505;
-    text-align:center;
-    font-size: 27px;  
-    text-shadow: -6px 0px 3px black; 
-    width: 220px;
-    height: 45px;
-    margin:5px;
-    padding: 0px;    
-    transition: ease 0.5s;
-    position: relative;
-    left: 175px;
-}
-.botonContacto
-{
-    background-color: #3b0505;
-    text-align:center;
-    font-size: 27px;  
-    text-shadow: -6px 0px 3px black; 
-    width: 200px;
-    height: 45px;
-    margin:5px;
-    padding: 0px;    
-    transition: ease 0.5s;
-    position: relative;
-    left: 200px;
-}
-.botonJuegaGratis
-{
-    background-color:#3b0505;
-    text-align:center;
-    font-size: 27px;  
-    text-shadow: -6px 0px 3px black; 
-    width: 200px;
-    height: 45px;
-    margin:5px;
-    padding: 0px;    
-    transition: ease 0.5s;
-    position: relative;
-    left: 950px;
-}
-
-
-ul a:hover ul
- {
-    display:block;
- } 
-.botones
-{
-    margin:5px;
-    padding: 0px;
-    border: inset 5px white;
+    font-size: 35px; 
+    color: white;       
+    background-color:#2b0404;
     transition: ease 0.5s;
 }
-.botones:hover
-{    
-    background-color: #4b0909;
-    border: black;
-    border-radius: 20%;
-}
-.juegaGratis
+.textoEncabezado
 {
+    font-size: 33px; 
+    color: white;
+    text-align: center;
     position: relative;
-    left: 1200px;
-    transition: ease 0.5s;
+    top: 5px;
 }
-.juegaGratis:hover
+.navbar-toggler-icon
 {
-    background-color: #040d3b;
-    border: black;
-    border-radius: 20%;
-}
-.logoIndex
-{
-    height:50px;
-    width: 50px;
-    position: relative;
-    top: -50px;
-    left:15px;
-    z-index: 1;
-    transition: ease height 0.5s;
-    transition: ease width 0.5s;    
-}
-.logoIndex:hover
-{    
-    width: 150px;
-    height: 150px;   
+    background-color:#2b0404;   
 }
 /*---Main---*/
 main
@@ -254,21 +149,23 @@ main
     background-color: #040821;
 }
 /*---Footer---*/
-footer
-{
-    background-image: linear-gradient(to right,#02061d,#02061d);  
-    width: 100%;
-    height: 5vh;
-    position: relative;
-    top: 1900px;
-}
-.footerImg
-{        
-    width: 50px; 
-    height: 45px;   
-   
-}
 
+.container
+{    
+    height: 0px;
+    background-color: #2b0404;
+}
+.footer
+{   
+    height: 5vh; 
+    width: 100%;
+    background-color: #2b0404;
+}
+#pieIndex
+{
+    position: relative;
+    top: 1900px;  
+}
 .textoFooter
 {
     font-size: 30px;    
@@ -278,48 +175,26 @@ footer
     letter-spacing: 3px;
     text-align: center;
     position: relative;
-    left: -10px;
-    top: 10px;
-    
+    left: -900px;
+    top: 5px;    
 }
-.botonFacebook
+.facebook
 {
-    background-color: white; 
-    text-shadow: -6px 0px 3px black; 
-    width: 50px;
-    height: 45px;
-    margin:5px;
-    padding: 0px;    
-    transition: ease 0.5s;
-    position: relative;
-    top: -60px;
-    left: 1200px;
+   position: relative;
+   top: -50px;
+   left: -100px;
 }
-.botonTwitter
+.twitter
 {
-    background-color:white;   
-    text-shadow: -6px 0px 3px black; 
-    width: 50px;
-    height: 45px;
-    margin:5px;
-    padding: 0px;    
-    transition: ease 0.5s;
-    position: relative;
-    top: -60px;
-    left: 1210px;
+   position: relative;
+   top: -50px;
+   left: -50px;
 }
-.botonYoutube
+.youtube
 {
-    background-color:white;    
-    text-shadow: -6px 0px 3px black; 
-    width: 50px;
-    height: 45px;
-    margin:5px;
-    padding: 0px;    
-    transition: ease 0.5s;
-    position: relative;
-    top: -60px;
-    left: 1220px;
+   position: relative;
+   top: -50px;
+   left: 0px;
 }
 /*---Otras Paginas---*/
 .titulosPaginas
@@ -418,7 +293,8 @@ footer
 #pieHeroes
 {
     grid-area: pie;
-    top: 60px;    
+    position: relative;
+    top: 50px;    
 }
 /*---Pagina Actualizaciones---*/
 #gridActualizaciones

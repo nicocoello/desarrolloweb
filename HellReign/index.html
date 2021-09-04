@@ -17,17 +17,48 @@
 <body>
     <!-----------------Header------------------------>
     <header class="encabezado container-fluid">
-        <nav>
-            <ul>
-                <a class="botonHeroes btn btn-dark" href=Paginas/heroes.html role="button">Heroes</a>
-                <a class="botonNoticias btn btn-dark" href=Paginas/noticias.html role="button">Noticias</a>
-                <a class="botonActualizaciones btn btn-dark" href=Paginas/actualizaciones.html role="button">
-                    Actualizaciones</a>
-                <a class="botonContacto btn btn-dark" href=Paginas/contacto.html role="button">Contacto</a>
-                <a class="botonJuegaGratis btn btn-dark" href=Paginas/juegagratis.html role="button">Juega Gratis</a>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/Paginas/juegagratis.html">
+                    <p class="textoEncabezado">Juega Ahora</p>
+                </a>
+                <button class="navbar-toggler col-sm-12 col-md-12 col-lg-12" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-sm-12 col-md-12 col-lg-12" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">
+                                <p class="textoBotones"> Home </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Paginas/heroes.html">
+                                <p class="textoBotones"> Heroes </p>
+                            </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Paginas/contacto.html">
+                                <p class="textoBotones"> Contacto </p>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Novedades</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/Paginas/actualizaciones.html">Actualizaciones</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/Paginas/noticias.html">Noticias</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <a href=index.html><img class="logoIndex" src="Imagenes/HellReignLogo.png" alt="LogoEncabezado"></a>
     </header>
     <!-----------------Main------------------------>
     <main>
@@ -49,15 +80,33 @@
         </section>
     </main>
     <!-----------------Footer------------------------>
-    <footer class="redesFooter container-fluid">
-        <p class="textoFooter">SEGUI A HELLREIGN</p>
-        <a class="botonFacebook btn btn-dark" href="https://facebook.com/" role="button"><img class="footerImg"
-                src="Imagenes/facebook.svg" alt="Facebook"></a>
-        <a class="botonTwitter btn btn-dark" href="https://twitter.com/" role="button"><img class="footerImg"
-                src="Imagenes/twitter.svg" alt="Twitter"></a>
-        <a class="botonYoutube btn btn-dark" href="https://youtube.com/" role="button"><img class="footerImg"
-                src="Imagenes/youtube.svg" alt="Youtube"></a>
+    <footer class="footer" id="pieIndex">
+        <p class="textoFooter">Segui a HellReign</p>
+        <nav>
+            <div class="container">
+                <a class="facebook" href="https://facebook.com/">
+                    <img src="/Imagenes/facebook.svg" alt="Facebook" width="30" height="30">
+                </a>
+            </div>
+            <div class="container">
+                <a class="twitter" href="https://twitter.com/">
+                    <img src="/Imagenes/twitter.svg" alt="Twitter" width="30" height="30">
+                </a>
+            </div>
+            <div class="container">
+                <a class="youtube" href="https://youtube.com/">
+                    <img src="/Imagenes/youtube.svg" alt="Youtube" width="30" height="30">
+                </a>
+            </div>
+        </nav>
     </footer>
+    <!-------------BOOTSTRAP + JAVASCRIPT------------>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

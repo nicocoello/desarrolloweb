@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JuegaGratis</title>
-
+    <!--BOOTSTRAP ONLINE-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="../Css/style.css" />
 </head>
 <!-----------------Body------------------------>
@@ -16,19 +18,48 @@
     <!-----------------Header------------------------>
     <div id="gridJuegaGratis"></div>
     <header class="encabezado">
-        <nav>
-            <ul>
-                <li class="botones"><a href=../Paginas/heroes.html>Heroes</a></li>
-                <li class="botones"><a href=../Paginas/noticias.html>Noticias</a>
-                    <ul>
-                        <li class="subBotones"><a href=../Paginas/actualizaciones.html>Actualizaciones</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../Paginas/juegagratis.html">
+                    <p class="textoEncabezado">Juega Ahora</p>
+                </a>
+                <button class="navbar-toggler col-sm-12 col-md-12 col-lg-12" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-sm-12 col-md-12 col-lg-12" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                                <p class="textoBotones"> Home </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Paginas/heroes.html">
+                                <p class="textoBotones"> Heroes </p>
+                            </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Paginas/contacto.html">
+                                <p class="textoBotones"> Contacto </p>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Novedades</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../Paginas/actualizaciones.html">Actualizaciones</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../Paginas/noticias.html">Noticias</a></li>
+
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-                <li class="botones"><a href=../Paginas/contacto.html>Contacto</a></li>
-                <li class="botones juegaGratis"><a href=../Paginas/juegagratis.html>Juega Gratis</a></li>
-            </ul>
+                </div>
+            </div>
         </nav>
-        <a href=../index.html><img class="logoIndex" src="../Imagenes/HellReignLogo.png" alt="LogoEncabezado"></a>
     </header>
     <!-----------------Main------------------------>
     <section id="mainJuegaGratis">
@@ -38,12 +69,33 @@
         </section>
     </section>
     <!-----------------Footer------------------------>
-    <footer class="redesFooter" id="pieJuegaGratis">
-        <p class="textoFooter">SEGUI A HELLREIGN</p>
-        <a href="https://facebook.com/"><img class="footerImg" src="../Imagenes/logofacebook.png" alt="Facebook"></a>
-        <a href="https://twitter.com/"><img class="footerImg" src="../Imagenes/logotwitter.png" alt="Twitter"></a>
-        <a href="https://youtube.com/"><img class="footerImg" src="../Imagenes/logoyoutube.png" alt="Youtube"></a>
+    <footer class="footer">
+        <p class="textoFooter">Segui a HellReign</p>
+        <nav>
+            <div class="container">
+                <a class="facebook" href="https://facebook.com/">
+                    <img src="../Imagenes/facebook.svg" alt="Facebook" width="30" height="30">
+                </a>
+            </div>
+            <div class="container">
+                <a class="twitter" href="https://twitter.com/">
+                    <img src="../Imagenes/twitter.svg" alt="Twitter" width="30" height="30">
+                </a>
+            </div>
+            <div class="container">
+                <a class="youtube" href="https://youtube.com/">
+                    <img src="../Imagenes/youtube.svg" alt="Youtube" width="30" height="30">
+                </a>
+            </div>
+        </nav>
     </footer>
+    <!-------------BOOTSTRAP + JAVASCRIPT------------>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
