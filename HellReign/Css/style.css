@@ -24,15 +24,17 @@ body
 
 #navbarDropdown
 {  
-    font-size: 27px; 
+    font-size: 37px;     
     text-align: center; 
+    font-family: 'Bangers',sans-serif;
     color: white;
     position: relative;
     top: 8px;
 }
 .textoBotones
 {
-    font-size: 27px;
+    font-family: 'Bangers',sans-serif;
+    font-size: 37px;
     color: white;
     text-align: center;
     position: relative;
@@ -40,7 +42,8 @@ body
 }
 .navbar-brand
 {
-    font-size: 35px; 
+    font-family: 'Bangers',sans-serif;
+    font-size: 40px; 
     color: white;       
     background-color:#2b0404;
     transition: ease 0.5s;
@@ -461,32 +464,4 @@ main
     color:white;
     text-align: center;
 }
-/*---Juega Gratis---*/
-#gridJuegaGratis
-{
-    display: grid;
-    grid-template-areas: 
-    "cabecera"
-    "juegagratis"
-    "pie"
-    ;
-}
-#mainJuegaGratis
-{
-    grid-area: juegagratis;
-    background-color:rgb(15, 17, 31);
-    width: 100%;
-    height: 90vh;
-}
-#pieJuegaGratis
-{
-    grid-area: pie;
-    top: 0px;
-}
-.bkgJuegaGratis
-{
-    background-image:url("../Imagenes/FondoJugarJuego.jpg") ;
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 1000px;
-}
+
