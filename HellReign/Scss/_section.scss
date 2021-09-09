@@ -1,6 +1,12 @@
+//Variables
+$rojo: #2b0404;
+$rojoclaro: #8A0E0E;
+$azul: #040821;
+//-----------
+
 /*---Index---*/
 main
-{   
+{       
     background-color: #040821;
     width: 100%;       
 }
@@ -105,12 +111,12 @@ main
     "pie"
     ;
 }
-#mainJuegaGratis
+.mainJuegaGratis
 {
+    
     grid-area: juegagratis;
     background-color:$azul;
-    width: 100%;
-    height: 90vh;
+    
 }
 #pieJuegaGratis
 {
@@ -118,7 +124,7 @@ main
     top: 0px;
 }
 .bkgJuegaGratis
-{
+{    
     background-image:url("../Imagenes/FondoJugarJuego.jpg") ;
     background-repeat: no-repeat;
     background-size:cover;

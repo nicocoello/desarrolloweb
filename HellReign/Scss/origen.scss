@@ -1,13 +1,35 @@
-
-//Variables
-$rojo: #2b0404;
-$rojoclaro: #8A0E0E;
-$azul: #040821;
 //Import
-@import "main";
 @import"header";
 @import"section";
 @import"footer";
+
+/*---Google Fonts---*/
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&display=swap');
+/*---Parametros Iniciales---*/
+*{  
+margin: 0;
+padding: 0;    
+}
+/*---Body---*/
+body
+{
+    font-family: 'Carter One', sans-serif;
+    background-color: #040821;
+    box-sizing: border-box;       
+}
+
+/*---Titulos Paginas---*/
+.titulosPaginas
+{
+    color:#8A0E0E;
+    font-size: 70px;
+    text-shadow: -6px 0px 3px black;
+    letter-spacing: 3px;
+    text-align: center; 
+    font-family: 'Bangers',sans-serif;        
+}
+
 
 
 
