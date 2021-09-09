@@ -1,71 +1,8 @@
-/*---Google Fonts---*/
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&display=swap');
-/*---Parametros Iniciales---*/
-*{  
-margin: 0;
-padding: 0;    
-}
-/*---Body---*/
-body
-{
-    font-family: 'Carter One', sans-serif;        
-}
-/*---Header---*/
-.container-fluid
-{
-    background-color:#040821;
-}
-.nav-item
-{  
-    background-color: #2b0404;   
-    transition: ease 0.5s;
-}  
-
-#navbarDropdown
-{  
-    font-size: 37px;     
-    text-align: center; 
-    font-family: 'Bangers',sans-serif;
-    color: white;
-    position: relative;
-    top: 8px;
-}
-.textoBotones
-{
-    font-family: 'Bangers',sans-serif;
-    font-size: 37px;
-    color: white;
-    text-align: center;
-    position: relative;
-    top: 8px;
-}
-.navbar-brand
-{
-    font-family: 'Bangers',sans-serif;
-    font-size: 40px; 
-    color: white;       
-    background-color:#2b0404;
-    transition: ease 0.5s;
-}
-.textoEncabezado
-{
-    font-size: 33px; 
-    color: white;
-    text-align: center;
-    position: relative;
-    top: 5px;
-}
-.navbar-toggler-icon
-{
-    background-color:#2b0404;   
-}
-/*---Main---*/
+/*---Index---*/
 main
 {   
     background-color: #040821;
-    width: 100%;
-    height: 30vh;    
+    width: 100%;       
 }
 .titulo
 {
@@ -94,9 +31,7 @@ main
     background-image:url("../Imagenes/fondoindex.jpg") ;
     background-repeat: no-repeat;
     background-size:cover;
-    height: 1000px;
-    position: relative;
-    top: -300px;
+    height: 100vh;    
 }
 .parrafoVideo
 {
@@ -145,70 +80,60 @@ main
 {
     position: relative;
     top: -300px;    
-    width: 100%;        
+    width: 100%;            
 }
 .contenidoVideo
 {
     background-color: #040821;
 }
-/*---Footer---*/
+/*@media (max-width:700px)
+{
+  .titulo 
+  {
+     
+  }  
+}*/
+//--------------------------------------------------------------------------------------------------------------------------
 
-.container
-{    
-    height: 0px;
-    background-color: #2b0404;
+/*---Juega Gratis---*/
+#gridJuegaGratis
+{
+    display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "juegagratis"
+    "pie"
+    ;
 }
-.footer
-{   
-    height: 5vh; 
+#mainJuegaGratis
+{
+    grid-area: juegagratis;
+    background-color:$azul;
     width: 100%;
-    background-color: #2b0404;
+    height: 90vh;
 }
-#pieIndex
+#pieJuegaGratis
 {
-    position: relative;
-    top: 1900px;  
+    grid-area: pie;
+    top: 0px;
 }
-.textoFooter
+.bkgJuegaGratis
 {
-    font-size: 30px;    
-    color:white;
-    text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
-    font-family: 'Bangers',sans-serif;    
-    letter-spacing: 3px;
-    text-align: center;
-    position: relative;
-    left: -900px;
-    top: 5px;    
+    background-image:url("../Imagenes/FondoJugarJuego.jpg") ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 1000px;
 }
-.facebook
-{
-   position: relative;
-   top: -50px;
-   left: -100px;
-}
-.twitter
-{
-   position: relative;
-   top: -50px;
-   left: -50px;
-}
-.youtube
-{
-   position: relative;
-   top: -50px;
-   left: 0px;
-}
-/*---Otras Paginas---*/
 .titulosPaginas
 {
-    color:#8A0E0E;
+    color:$rojoclaro;
     font-size: 70px;
     text-shadow: -6px 0px 3px black;
     letter-spacing: 3px;
     text-align: center; 
     font-family: 'Bangers',sans-serif;        
 }
+//--------------------------------------------------------------------------------------------------------------------------
 /*---Pagina Heroes---*/
 .heroes
 {
@@ -232,8 +157,7 @@ main
     font-family: 'Bangers',sans-serif;    
     letter-spacing: 3px;
     text-align: center;
-    margin: 60px;
-    
+    margin: 60px;    
 }
 .sevarog
 {
@@ -299,6 +223,8 @@ main
     position: relative;
     top: 50px;    
 }
+//--------------------------------------------------------------------------------------------------------------------------
+
 /*---Pagina Actualizaciones---*/
 #gridActualizaciones
 {
@@ -350,8 +276,9 @@ main
 }
 .accordion
 {
+    width: 70%;
     position: relative;
-    top: 50px;
+    top: 50px;    
 }
 .accordion-item
 {
@@ -359,18 +286,20 @@ main
 }
 .accordion-button
 {   
-    width: 500px;
+   
     font-size: 25px;
     color: white;    
     background-color: #3b0505;
 }
 .accordion-collapse
 {
-    width: 500px;
+    
     font-size: 20px;
     color: white;    
     background-color: #3b0505;
 }
+//--------------------------------------------------------------------------------------------------------------------------
+
 /*---Pagina Noticias---*/
 #gridNoticias
 {
@@ -437,6 +366,8 @@ main
 {
     font-size: 35px;    
 }
+//--------------------------------------------------------------------------------------------------------------------------
+
 /*---Pagina Contacto---*/
 #gridContacto
 {

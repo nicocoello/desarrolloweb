@@ -1,0 +1,66 @@
+/*---Header---*/
+
+.container-fluid
+{
+    background-color:#040821;
+    .header
+        {
+            background-color:#040821 ;
+        }
+}
+
+.nav-item
+{  
+    background-color: #2b0404;   
+    transition: ease 0.5s;
+}  
+#navbarDropdown
+{  
+    font-size: 2.3rem;     
+    text-align: center; 
+    font-family: 'Bangers',sans-serif;
+    color: white;
+    position: relative;
+    top: 8px;
+}
+.textoBotones
+{
+    font-family: 'Bangers',sans-serif;
+    font-size: 2.3rem;
+    color: white;
+    text-align: center;
+    position: relative;
+    top:0.5rem;
+}
+.navbar-brand
+{
+    font-family: 'Bangers',sans-serif;
+    font-size: 2.5rem; 
+    color: white;       
+    background-color:#2b0404;
+    transition: ease 0.5s;
+}
+.textoEncabezado
+{
+    font-size: 33px; 
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 5px;
+}
+.navbar-toggler-icon
+{
+    background-color:#2b0404;
+}
+.dropdown-menu
+{
+    background-color:#2b0404; 
+}
+.dropdown-item
+{
+    font-size: 15px; 
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 5px;
+}
