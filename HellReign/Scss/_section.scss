@@ -2,7 +2,7 @@
 $rojo: #2b0404;
 $rojoclaro: #8A0E0E;
 $azul: #040821;
-//-----------
+//--------------------------------------------------------------------------------------------------------------------------
 
 /*---Index---*/
 main
@@ -12,24 +12,24 @@ main
 }
 .titulo
 {
-    color: #8A0E0E;
-    font-size: 100px;
+    color: #851010;
+    font-size: 6.25rem;
     text-shadow: -6px 0px 3px black;
-    letter-spacing: 3px;
+    letter-spacing: 0.18rem;
     text-align: center;
     position: relative;
-    top: 90px;
+    top: 5.62rem;
     z-index: 1;    
 }
 .subtitulos
 {
     color:#8A0E0E;
-    font-size: 70px;
+    font-size: 4.37rem;
     text-shadow: -6px 0px 3px black;
-    letter-spacing: 3px;
+    letter-spacing: 0.18rem;
     text-align: center;
     position: relative;
-    top: 200px;
+    top: 12.5rem;
     font-family: 'Bangers',sans-serif;    
 }
 .imagenBkg
@@ -41,51 +41,51 @@ main
 }
 .parrafoVideo
 {
-    font-size: 100px;    
+    font-size: 6.25rem;    
     color:#8A0E0E;
     text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
     font-family: 'Bangers',sans-serif;    
-    letter-spacing: 3px;
+    letter-spacing: 0.18rem;
     text-align: center;
     position: relative;
-    top: 700px;   
+    top: 43.75rem;   
     z-index: 1;
 }
 .parrafoPresentacion
 {
-    font-size: 50px;    
+    font-size: 3.12rem;    
     color:white;
     text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
     font-family: 'Bangers',sans-serif;    
-    letter-spacing: 3px;
+    letter-spacing: 0.18rem;
     text-align: center;
     position: relative;
-    top: 400px;   
+    top: 25rem;   
 }
 .textoGrande
 {
-    font-size: 80px ;
+    font-size: 5rem ;
 }
 .botonJuegaAhora
 {   
     background-color:#3b0505;
     text-align:center;
-    font-size: 50px;  
+    font-size: 3.12rem;  
     text-shadow: -6px 0px 3px black; 
-    width: 400px;
-    height: 75px;
-    margin:5px;
-    padding: 0px;    
+    width: 25rem;
+    height: 4.68rem;
+    margin:0.31rem;
+    padding: 0;    
     transition: ease 0.5s;
     position: relative;
-    left: 830px;
-    top: 100px;
+    left: 51.87rem;
+    top: 6.25rem;
     z-index: 1; 
 }
 .videoIndex
 {
     position: relative;
-    top: -300px;    
+    top: -18.75rem;    
     width: 100%;            
 }
 .contenidoVideo
@@ -120,22 +120,21 @@ main
 }
 #pieJuegaGratis
 {
-    grid-area: pie;
-    top: 0px;
+    grid-area: pie;    
 }
 .bkgJuegaGratis
 {    
     background-image:url("../Imagenes/FondoJugarJuego.jpg") ;
     background-repeat: no-repeat;
     background-size:cover;
-    height: 1000px;
+    height: 62.5rem;
 }
 .titulosPaginas
 {
     color:$rojoclaro;
-    font-size: 70px;
+    font-size: 4.37rem;
     text-shadow: -6px 0px 3px black;
-    letter-spacing: 3px;
+    letter-spacing: 0.18rem;
     text-align: center; 
     font-family: 'Bangers',sans-serif;        
 }
@@ -143,8 +142,8 @@ main
 /*---Pagina Heroes---*/
 .heroes
 {
-   width: 400px;
-   height: 200px;     
+   width: 25rem;
+   height: 12.5rem;     
    border: solid 5px white;
    transition: height 1.5s;
    transition: width 1.5s; 
@@ -152,38 +151,38 @@ main
 .heroes:hover
 {
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.479);
-    width: 500px;
-    height: 250px;
+    width: 31.25rem;
+    height: 15.62rem;
 }
 .revenant
 {
-    font-size: 50px;    
+    font-size:3.1rem;    
     color:white;
     text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
     font-family: 'Bangers',sans-serif;    
-    letter-spacing: 3px;
+    letter-spacing: 0.18rem;
     text-align: center;
-    margin: 60px;    
+    margin: 3.75rem;    
 }
 .sevarog
 {
-    font-size: 50px;    
+    font-size: 3.1rem;    
     color:white;
     text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
     font-family: 'Bangers',sans-serif;    
-    letter-spacing: 3px;
+    letter-spacing: 0.18rem;
     text-align: center;
-    margin: 60px;    
+    margin: 3.75rem;    
 }
 .wraith
 {
-    font-size: 50px;    
+    font-size: 3.1rem;    
     color:white;
     text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
     font-family: 'Bangers',sans-serif;    
-    letter-spacing: 3px;
+    letter-spacing: 0.18rem;
     text-align: center;   
-    margin: 60px; 
+    margin: 3.75rem;
 }
 #gridHeroes
 {
@@ -195,7 +194,7 @@ main
     "pie pie pie"/*4 fila*/
     ;
     grid-template-columns: 33.3% 33.3% 33.3%;    
-    grid-template-rows: 50px 450px 450px 50px;
+    grid-template-rows: 3.1rem 28.12rem 28.12rem 3.1rem;
 }
 #heroes
 {
@@ -227,7 +226,7 @@ main
 {
     grid-area: pie;
     position: relative;
-    top: 50px;    
+    top: 3.1rem;    
 }
 //--------------------------------------------------------------------------------------------------------------------------
 
@@ -250,8 +249,7 @@ main
 }
 #pieActualizaciones
 {
-    grid-area: pie;
-    top: 0px;
+    grid-area: pie;    
 }
 .padreFlex
 {
@@ -263,17 +261,16 @@ main
 .actualizaciones
 {    
     background-color: #2b0404;
-    font-size: 20px;    
+    font-size: 1.25rem;
     color:grey;
     text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
     font-family: 'Bangers',sans-serif;    
-    letter-spacing: 3px;
+    letter-spacing: 0.18rem;
     text-align: center;
     position: relative;
-    height: 50px;
-    top: 0px;
-    padding: 5px;
-    margin: 20px;
+    height: 3.1rem;    
+    padding: 0.31rem;
+    margin: 1.25rem;
 }
 .textoActualizaciones
 {
@@ -284,7 +281,7 @@ main
 {
     width: 70%;
     position: relative;
-    top: 50px;    
+    top: 3.1rem;    
 }
 .accordion-item
 {
@@ -293,14 +290,14 @@ main
 .accordion-button
 {   
    
-    font-size: 25px;
+    font-size: 1.56rem;
     color: white;    
     background-color: #3b0505;
 }
 .accordion-collapse
 {
     
-    font-size: 20px;
+    font-size: 1.25rem;
     color: white;    
     background-color: #3b0505;
 }
@@ -325,30 +322,29 @@ main
 }
 #pieNoticias
 {
-    grid-area: pie;
-    top: 0px;
+    grid-area: pie;   
 }
 .tabla
 {    
    color:white;    
-   width: 2125px;   
+   width: 132.81rem;
 }
 .subtitulosNoticias
 {
     color:#8A0E0E;
-    font-size: 50px;
+    font-size: 3.1rem;
     text-shadow: -6px 0px 3px black;
-    letter-spacing: 3px;
+    letter-spacing: 0.18rem;
     text-align: center; 
     font-family: 'Bangers',sans-serif; 
 }
 .parrafoNoticias
 {
-    font-size: 30px;    
+    font-size: 1.9rem;  
     color:white;
     text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
     font-family: 'Bangers',sans-serif;    
-    letter-spacing: 3px;
+    letter-spacing: 0.18rem;
     text-align: center;
     position: relative;
     top: 10px;
@@ -356,24 +352,22 @@ main
 .noticiasContenedor
 {
     background-color: #2b0404;
-    font-size: 20px;    
+    font-size: 1.25rem;    
     color:grey;
     text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
     font-family: 'Bangers',sans-serif;    
-    letter-spacing: 3px;
+    letter-spacing: 0.18rem;
     text-align: center;
     position: relative;
-    height: 50px;
-    top: 0px;
-    padding: 5px;
-    margin: 20px;
+    height: 3.12rem;    
+    padding:0.31rem;
+    margin: 1.25rem;
 }
 .tituloTabla
 {
-    font-size: 35px;    
+    font-size: 2.18rem;    
 }
 //--------------------------------------------------------------------------------------------------------------------------
-
 /*---Pagina Contacto---*/
 #gridContacto
 {
@@ -393,12 +387,10 @@ main
 }
 #pieContacto
 {
-    grid-area: pie;
-    top: 0px;
+    grid-area: pie;    
 }
 .contacto
 {
     color:white;
     text-align: center;
 }
-
