@@ -393,8 +393,8 @@ video {
   height: 3rem;
   width: 30rem;
   background-color: #2b0404;
-  font-size: 2rem;
   color: white;
+  font-size: 2rem;
   position: relative;
   top: -1rem; }
 
@@ -402,8 +402,8 @@ video {
   height: 3rem;
   width: 30rem;
   background-color: #2b0404;
-  font-size: 2rem;
   color: white;
+  font-size: 2rem;
   text-align: center;
   position: relative;
   top: -0.5rem; }
@@ -473,7 +473,7 @@ video {
 
 /*---Footer---*/
 .footer {
-  max-height: 5vh;
+  max-height: 7vh;
   width: 100%;
   background-color: #2b0404;
   margin: 0;

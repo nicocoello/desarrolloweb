@@ -2,6 +2,14 @@
 $rojo: #2b0404;
 $rojoclaro: #8A0E0E;
 $azul: #040821;
+$widthMail: 30rem;
+
+//Mixing
+@mixin color-fondo
+{
+  background-color: $rojo;
+  color: white;
+}
 //--------------------------------------------------------------------------------------------------------------------------
 
 /*---Index---*/
@@ -491,10 +499,9 @@ video
 .mail
 {
     height: 3rem;
-    width: 30rem;
-    background-color: $rojo;
-    font-size: 2rem;
-    color: white;
+    width: $widthMail;
+    @include color-fondo;    
+    font-size: 2rem;    
     position: relative;
     top:-1rem;
     
@@ -503,9 +510,8 @@ video
 {
     height: 3rem;
     width: 30rem;
-    background-color: $rojo;
-    font-size: 2rem;
-    color: white;
+    @include color-fondo;    
+    font-size: 2rem;    
     text-align: center;
     position: relative;
     top:-0.5rem;
@@ -553,7 +559,7 @@ video
   }
   .mail
   {
-      width: 15rem;
+      width: $widthMail/2;
       font-size: 1.2rem;
   }
   .sistemaOperativo
