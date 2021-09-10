@@ -19,94 +19,55 @@
 
 <body>
     <!-----------------Header------------------------>
-    <div id="gridNoticias">
-        <header class="encabezado">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="../Paginas/juegagratis.html">
-                        <p class="textoEncabezado">Juega Ahora</p>
-                    </a>
-                    <button class="navbar-toggler col-sm-12 col-md-12 col-lg-12" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse col-sm-12 col-md-12 col-lg-12" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">
-                                    <p class="textoBotones"> Home </p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../Paginas/heroes.html">
-                                    <p class="textoBotones"> Heroes </p>
-                                </a>
-                            </li>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../Paginas/contacto.html">
-                                    <p class="textoBotones"> Contacto </p>
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">Novedades</a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item"
-                                            href="../Paginas/actualizaciones.html">Actualizaciones</a></li>
-                                    <li><a class="dropdown-item" href="../Paginas/noticias.html">Noticias</a></li>
-
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+    <div class="container-fluid">
+        <div class="row ">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/Paginas/juegagratis.html">
+                    <p class="textoEncabezado">Juega Ahora</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">
+                                <p class="textoBotones"> Home </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Paginas/heroes.html">
+                                <p class="textoBotones"> Heroes </p>
+                            </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Paginas/contacto.html">
+                                <p class="textoBotones"> Contacto </p>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Novedades</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/Paginas/actualizaciones.html">Actualizaciones</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/Paginas/noticias.html">Noticias</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </nav>
-        </header>
-        <!-----------------Main------------------------>
-        <section id="mainNoticias">
-            <section>
-                <h1 class="titulosPaginas">Noticias</h1>
-                <br>
-                <table class="tabla" cellspacing="10" cellpading="10" border=2>
-                    <caption class="tituloTabla">Requisitos minimos del sistema</caption>
-                    <tr>
-                        <th>Sistema Operativo</th>
-                        <th>Procesador</th>
-                        <th>Memoria</th>
-                        <th>Graficos</th>
-                        <th>Almacenamiento</th>
-                    </tr>
-                    <tr>
-                        <td>Windows 7</td>
-                        <td>Intel core i5| AMD Ryzen 3 1200</td>
-                        <td>6 GB de RAM</td>
-                        <td>NVIDIA GeForce GTX660|AMD Radeon HD7870</td>
-                        <td>12 GB de espacio disponible</td>
-                    </tr>
-                </table>
-                <br>
-                <table class="tabla" cellspacing="10" cellpading="10" border=2>
-                    <caption>Requisitos recomendados del sistema</caption>
-                    <tr>
-                        <th>Sistema Operativo</th>
-                        <th>Procesador</th>
-                        <th>Memoria</th>
-                        <th>Graficos</th>
-                        <th>Almacenamiento</th>
-                    </tr>
-                    <tr>
-                        <td>Windows 10</td>
-                        <td>Intel core i5| AMD Ryzen 5 3600</td>
-                        <td>8 GB de RAM</td>
-                        <td>NVIDIA GeForce GTX1060|AMD Radeon Vega64</td>
-                        <td>18 GB de espacio disponible</td>
-                    </tr>
-                </table>
-            </section>
-            <br>
-            <p class="subtitulosNoticias">Noticias Destacadas</p>
+        </div>
+    </div>
+    <!-----------------Main------------------------>
+    <main class="mainNoticias">
+        <div class="mainContenedor">
+            <div>
+                <p class="subtitulosNoticias">Noticias Destacadas</p>
+            </div>
             <div class="noticiasContenedor">
                 <p class="parrafoNoticias">Lanzamiento oficial de la BETA: 1 de Diciembre del 2021.</p>
             </div>
@@ -123,8 +84,9 @@
             <div class="noticiasContenedor">
                 <p class="parrafoNoticias">Comienzo del desarrollo del videojuego. 16 de Agosto de 2020.</p>
             </div>
-        </section>
-    </div>
+        </div>
+    </main>
+
     <!-----------------Footer------------------------>
     <footer class="footer">
         <div class="footerContenedor">

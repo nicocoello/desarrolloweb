@@ -19,79 +19,82 @@
 
 <body>
     <!-----------------Header------------------------>
-    <div id="gridContacto">
-        <header class="encabezado">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="../Paginas/juegagratis.html">
-                        <p class="textoEncabezado">Juega Ahora</p>
-                    </a>
-                    <button class="navbar-toggler col-sm-12 col-md-12 col-lg-12" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse col-sm-12 col-md-12 col-lg-12" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">
-                                    <p class="textoBotones"> Home </p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../Paginas/heroes.html">
-                                    <p class="textoBotones"> Heroes </p>
-                                </a>
-                            </li>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../Paginas/contacto.html">
-                                    <p class="textoBotones"> Contacto </p>
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">Novedades</a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item"
-                                            href="../Paginas/actualizaciones.html">Actualizaciones</a></li>
-                                    <li><a class="dropdown-item" href="../Paginas/noticias.html">Noticias</a></li>
-
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+    <div class="container-fluid">
+        <div class="row ">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/Paginas/juegagratis.html">
+                    <p class="textoEncabezado">Juega Ahora</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">
+                                <p class="textoBotones"> Home </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Paginas/heroes.html">
+                                <p class="textoBotones"> Heroes </p>
+                            </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Paginas/contacto.html">
+                                <p class="textoBotones"> Contacto </p>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Novedades</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/Paginas/actualizaciones.html">Actualizaciones</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/Paginas/noticias.html">Noticias</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </nav>
-        </header>
-        <!-----------------Main------------------------>
-        <section id="mainContacto">
-            <h1 class="titulosPaginas">Contacto</h1>
-            <form class="contacto" action="" method="POST" enctype="text/plain">
+        </div>
+    </div>
+    <!-----------------Main------------------------>
+    <main class="mainContacto">
+        <div class="mainContenedor">
+            <h1 class="tituloContacto">Contacto</h1>
+            <form action="" method="POST" enctype="text/plain">
                 <fieldset>
-                    <legend>Complete los datos requeridos del formulario</legend>
-                    <label for="mail">E-mail</label>"
-                    <input type="email" name="mail" placeholder="username@correo.com">
-                    <br>
-                    <br>
-                    <label for="sistemaoperativo">Sistema Operativo</label>
-                    <select name=sistemaoperativo>
-                        <option value="Windows">Windows</option>
-                        <option value="Mac">Mac</option>
-                        <option value="Linux">Linux</option>
-                    </select>
-                    <br>
-                    <br>
-                    <label for="solicitud">Solicitud</label>
-                    <textarea rows="5" cols="30" name="solicitud"></textarea>
-                    <br>
-                    <br>
-                    <input type="reset" value="Cancelar Solicitud" />
-                    <input type="submit" value="Enviar Solicitud" />
+                    <div>
+                        <legend class="subtitulosContacto">Complete los datos requeridos del formulario</legend>
+                    </div>
+                    <div>
+                        <label class="subtitulosContacto" for="mail">E-mail</label>
+                        <input class="mail" type="email" name="mail" placeholder="username@email.com">
+                    </div>
+                    <div>
+                        <label class="subtitulosContacto" for="sistemaoperativo">Sistema Operativo</label>
+                        <select class="sistemaOperativo" name=sistemaoperativo>
+                            <option value="Windows">Windows</option>
+                            <option value="Mac">Mac</option>
+                            <option value="Linux">Linux</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="subtitulosContacto" for="solicitud">Solicitud</label>
+                        <textarea class="solicitud" rows="10" cols="50" name="solicitud"></textarea>
+                    </div>
+                    <div>
+                        <input class="botonContacto" type="reset" value="Cancelar Solicitud" />
+                        <input class="botonContacto" type="submit" value="Enviar Solicitud" />
+                    </div>
                 </fieldset>
             </form>
-        </section>
-    </div>
+        </div>
+    </main>
     <!-----------------Footer------------------------>
     <footer class="footer">
         <div class="footerContenedor">

@@ -5,32 +5,42 @@ $azul: #040821;
 //--------------------------------------------------------------------------------------------------------------------------
 
 /*---Index---*/
-main
+.main
 {       
-    background-color: #040821;
-    width: 100%;       
+    background-color: $azul;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;       
+}
+.mainContenedor
+{
+    display: block;
+    text-align: center;
+    justify-content: flex-end;
 }
 .titulo
 {
-    color: #851010;
+    color: $rojoclaro;
     font-size: 6.25rem;
     text-shadow: -6px 0px 3px black;
     letter-spacing: 0.18rem;
     text-align: center;
-    position: relative;
-    top: 5.62rem;
+    position: relative;    
     z-index: 1;    
+}
+video
+{
+    width: 100%;
 }
 .subtitulos
 {
-    color:#8A0E0E;
-    font-size: 4.37rem;
+    color:$rojoclaro;
+    font-size: 5.5rem;
     text-shadow: -6px 0px 3px black;
     letter-spacing: 0.18rem;
-    text-align: center;
-    position: relative;
-    top: 12.5rem;
-    font-family: 'Bangers',sans-serif;    
+    text-align: center;   
+    font-family: 'Bangers',sans-serif;   
 }
 .imagenBkg
 {    
@@ -42,13 +52,12 @@ main
 .parrafoVideo
 {
     font-size: 6.25rem;    
-    color:#8A0E0E;
+    color:$rojoclaro;
     text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
     font-family: 'Bangers',sans-serif;    
     letter-spacing: 0.18rem;
     text-align: center;
-    position: relative;
-    top: 43.75rem;   
+    position: relative;    
     z-index: 1;
 }
 .parrafoPresentacion
@@ -58,9 +67,8 @@ main
     text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
     font-family: 'Bangers',sans-serif;    
     letter-spacing: 0.18rem;
-    text-align: center;
-    position: relative;
-    top: 25rem;   
+    text-align: center; 
+    margin: 15rem;   
 }
 .textoGrande
 {
@@ -68,7 +76,7 @@ main
 }
 .botonJuegaAhora
 {   
-    background-color:#3b0505;
+    background-color:$rojo;
     text-align:center;
     font-size: 3.12rem;  
     text-shadow: -6px 0px 3px black; 
@@ -77,36 +85,64 @@ main
     margin:0.31rem;
     padding: 0;    
     transition: ease 0.5s;
-    position: relative;
-    left: 51.87rem;
-    top: 6.25rem;
+    position: relative;    
     z-index: 1; 
 }
-.videoIndex
-{
-    position: relative;
-    top: -18.75rem;    
-    width: 100%;            
-}
-.contenidoVideo
-{
-    background-color: #040821;
-}
+
 //-------------------------RESPONSIVE INDEX--------------------------------------------------------------------------------
 @media only screen and (min-width:320px) and (max-width:480px)
 {
     .titulo
     {
-        font-size: 4rem;           
-                 
+        font-size: 3rem;                          
     }
     .subtitulos
     {    
-        font-size: 2.1rem; 
+        font-size: 2rem;
+        text-shadow: -3px 0px 1.5px black;         
     }
     .imagenBkg
     {
         height: 50vh;
+        width: 100%;
+    }
+    .parrafoVideo
+    {
+        font-size: 2rem;                     
+    }
+    .parrafoPresentacion
+    {
+        font-size: 1rem; 
+        margin:4rem;
+    }
+    .textoGrande
+    {
+        font-size: 1.2rem;
+    }
+    .botonJuegaAhora
+    {
+        font-size: 1.5rem;
+        width:7.5rem;                                    
+    }
+    .videoIndex
+    {
+        width: 100%;        
+    }
+}
+@media only screen and (min-width:481px) and (max-width:768px)
+{
+    .titulo
+    {
+        font-size: 5rem;       
+    }
+    .subtitulos
+    {    
+        font-size: 3rem; 
+    }
+    .imagenBkg
+    {
+        height: 75vh;
+        width: 100%;
     }
     .parrafoVideo
     {
@@ -115,42 +151,11 @@ main
     .parrafoPresentacion
     {
         font-size: 1.5rem; 
+        margin: 6rem;
     }
     .textoGrande
     {
-        font-size: 2.5rem;
-    }
-    .botonJuegaAhora
-    {
-        font-size: 1.5rem;
-        width:7.5rem;        
-    }
-}
-@media only screen and (min-width:480px) and (max-width:768px)
-{
-    .titulo
-    {
-        font-size: 5.1rem;       
-    }
-    .subtitulos
-    {    
-        font-size: 3.2rem; 
-    }
-    .imagenBkg
-    {
-        height: 75vh;
-    }
-    .parrafoVideo
-    {
-        font-size: 4.5rem; 
-    }
-    .parrafoPresentacion
-    {
-        font-size: 2.2rem; 
-    }
-    .textoGrande
-    {
-        font-size: 3.5rem;
+        font-size: 1.7rem;
     }
     .botonJuegaAhora
     {
@@ -158,159 +163,168 @@ main
         width: 15rem;
         height: 3.4rem;
     }
+    .videoIndex
+    {
+        width: 100%;
+    }
+}
+@media only screen and (min-width:769px) and (max-width:1920px)
+{
+    .parrafoPresentacion
+    {
+        margin:8rem;
+        font-size: 2.5rem;
+    }
+    .textoGrande
+    {
+        font-size: 3rem;
+    }
 }
 
 //--------------------------------------------------------------------------------------------------------------------------
 
 /*---Juega Gratis---*/
-#gridJuegaGratis
-{
-    display: grid;
-    grid-template-areas: 
-    "cabecera"
-    "juegagratis"
-    "pie"
-    ;
-}
 .mainJuegaGratis
-{
-    
-    grid-area: juegagratis;
-    background-color:$azul;
-    
-}
-#pieJuegaGratis
-{
-    grid-area: pie;    
+{   
+    background-color: $azul;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;       
 }
 .bkgJuegaGratis
 {    
     background-image:url("../Imagenes/FondoJugarJuego.jpg") ;
     background-repeat: no-repeat;
     background-size:cover;
-    height: 62.5rem;
+    height: 60rem;
 }
-.titulosPaginas
+.bkgJuegaGratis h2
+{
+    margin: 25rem;
+}
+.subtituloJuegaGratis
 {
     color:$rojoclaro;
-    font-size: 4.37rem;
+    font-size: 5rem;
     text-shadow: -6px 0px 3px black;
     letter-spacing: 0.18rem;
     text-align: center; 
-    font-family: 'Bangers',sans-serif;        
+    font-family: 'Bangers',sans-serif;
 }
+//-------------------------RESPONSIVE JUEGA GRATIS--------------------------------------------------------------------------
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+    .bkgJuegaGratis
+    {
+        height: 40rem;
+    }
+    .bkgJuegaGratis h2
+    {
+        margin: 5rem;        
+    }
+    .subtituloJuegaGratis
+    {
+        color:$rojoclaro;
+        font-size: 2.5rem;
+        text-shadow: -3px 0px 1.5px black;        
+    }
+
+}
+@media only screen and (min-width:481px) and (max-width:768px)
+{
+    .bkgJuegaGratis
+    {
+        height: 50rem;
+    }
+    .bkgJuegaGratis h2
+    {
+        margin: 10rem;        
+    }
+    .subtituloJuegaGratis
+    {
+        color:$rojoclaro;
+        font-size: 3.5rem;
+        text-shadow: -6px 0px 3px black;        
+    }
+}
+@media only screen and (min-width:769px) and (max-width:1920px)
+{   
+    .bkgJuegaGratis h2
+    {
+        margin: 15rem;        
+    }    
+}
+
 //--------------------------------------------------------------------------------------------------------------------------
 /*---Pagina Heroes---*/
-.heroes
+.mainHeroes
+{
+    background-color: $azul;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+.mainContenedorHeroes
+{
+    display:flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+}
+.heroesImagenes
 {
    width: 25rem;
    height: 12.5rem;     
    border: solid 5px white;
    transition: height 1.5s;
    transition: width 1.5s; 
+   margin: 2rem;
 }
-.heroes:hover
+.heroesImagenes:hover
 {
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.479);
     width: 31.25rem;
     height: 15.62rem;
 }
-.revenant
+.fotoIzq
 {
-    font-size:3.1rem;    
+    font-size:3rem;    
     color:white;
     text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
     font-family: 'Bangers',sans-serif;    
     letter-spacing: 0.18rem;
-    text-align: center;
-    margin: 3.75rem;    
+    text-align: center;       
 }
-.sevarog
+.fotoCentro
 {
-    font-size: 3.1rem;    
+    font-size: 3rem;    
     color:white;
     text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
     font-family: 'Bangers',sans-serif;    
     letter-spacing: 0.18rem;
-    text-align: center;
-    margin: 3.75rem;    
+    text-align: center;       
 }
-.wraith
+.fotoDer
 {
-    font-size: 3.1rem;    
+    font-size: 3rem;    
     color:white;
     text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
     font-family: 'Bangers',sans-serif;    
     letter-spacing: 0.18rem;
     text-align: center;   
-    margin: 3.75rem;
-}
-#gridHeroes
-{
-    display: grid;
-    grid-template-areas:
-    "cabecera cabecera cabecera"/*1 fila*/
-    "heroes heroes heroes" /*2 fila*/
-    "villanos villanos villanos"/*3 fila*/
-    "pie pie pie"/*4 fila*/
-    ;
-    grid-template-columns: 33.3% 33.3% 33.3%;    
-    grid-template-rows: 3.1rem 28.12rem 28.12rem 3.1rem;
-}
-#heroes
-{
-    display: flex;
-    flex-flow:row nowrap;
-    justify-content: space-evenly;
-    align-items: stretch;       
-    grid-area: heroes;
-    background-color:rgb(15, 17, 31);
-    width: 100%;
-    height: 50vh;
-}
-#villanos
-{    
-    display: flex;
-    flex-flow:row nowrap;
-    justify-content: space-evenly;
-    align-items: stretch;  
-    grid-area: villanos;
-    background-color:rgb(15, 17, 31);
-    width: 100%;
-    height: 50vh;
-}
-#cabecera
-{
-    grid-area: cabecera;   
-}
-#pieHeroes
-{
-    grid-area: pie;
-    position: relative;
-    top: 3.1rem;    
 }
 //--------------------------------------------------------------------------------------------------------------------------
 
 /*---Pagina Actualizaciones---*/
-#gridActualizaciones
-{
-    display: grid;
-    grid-template-areas: 
-    "cabecera"
-    "actualizaciones"
-    "pie"
-    ;
-}
-#mainActualizaciones
+
+.mainActualizaciones
 {
     grid-area: actualizaciones;
-    background-color:rgb(15, 17, 31);
+    background-color:$azul;
     width: 100%;
     height: 90vh;
-}
-#pieActualizaciones
-{
-    grid-area: pie;    
 }
 .padreFlex
 {
@@ -318,20 +332,6 @@ main
     flex-flow: column wrap;
     justify-content: center;
     align-content: center;    
-}
-.actualizaciones
-{    
-    background-color: #2b0404;
-    font-size: 1.25rem;
-    color:grey;
-    text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
-    font-family: 'Bangers',sans-serif;    
-    letter-spacing: 0.18rem;
-    text-align: center;
-    position: relative;
-    height: 3.1rem;    
-    padding: 0.31rem;
-    margin: 1.25rem;
 }
 .textoActualizaciones
 {
@@ -346,53 +346,47 @@ main
 }
 .accordion-item
 {
-    background-color: #3b0505;
+    background-color: $rojo;
 }
 .accordion-button
 {   
    
     font-size: 1.56rem;
     color: white;    
-    background-color: #3b0505;
+    background-color: $rojo;
 }
 .accordion-collapse
 {
     
     font-size: 1.25rem;
     color: white;    
-    background-color: #3b0505;
+    background-color: $rojo;
+}
+//-------------------------RESPONSIVE ACTUALIZACIONES-----------------------------------------------------------------------
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+    .accordion-button
+    {   
+    font-size: 1.2rem;    
+    }
+.accordion-collapse
+    {    
+    font-size: 0.9rem;    
+    }
 }
 //--------------------------------------------------------------------------------------------------------------------------
 
 /*---Pagina Noticias---*/
-#gridNoticias
-{
-    display: grid;
-    grid-template-areas: 
-    "cabecera"
-    "noticias"
-    "pie"
-    ;
-}
-#mainNoticias
-{
-    grid-area: noticias;
-    background-color:rgb(15, 17, 31);
-    width: 100%;
-    height: 90vh;
-}
-#pieNoticias
-{
-    grid-area: pie;   
-}
-.tabla
+
+.mainNoticias
 {    
-   color:white;    
-   width: 132.81rem;
+    background-color:$azul;
+    width: 100%;    
 }
+
 .subtitulosNoticias
 {
-    color:#8A0E0E;
+    color:$rojoclaro;
     font-size: 3.1rem;
     text-shadow: -6px 0px 3px black;
     letter-spacing: 0.18rem;
@@ -401,57 +395,222 @@ main
 }
 .parrafoNoticias
 {
-    font-size: 1.9rem;  
+    font-size: 2rem;
+    text-align: center; 
     color:white;
     text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
     font-family: 'Bangers',sans-serif;    
     letter-spacing: 0.18rem;
-    text-align: center;
     position: relative;
-    top: 10px;
+    top: 3.1rem;
+        
 }
 .noticiasContenedor
 {
-    background-color: #2b0404;
-    font-size: 1.25rem;    
-    color:grey;
+    background-color: $rojo;
+    font-size: 1.25rem;  
     text-shadow: -6px 0px 3px rgba(0,0,0,0.95);
     font-family: 'Bangers',sans-serif;    
     letter-spacing: 0.18rem;
-    text-align: center;
-    position: relative;
+    text-align: center;    
     height: 3.12rem;    
     padding:0.31rem;
     margin: 1.25rem;
 }
-.tituloTabla
+//-------------------------RESPONSIVE NOTICIAS------------------------------------------------------------------------------
+@media only screen and (min-width:320px) and (max-width:480px)
 {
-    font-size: 2.18rem;    
+    .parrafoNoticias
+    {
+        font-size: 1rem;
+        text-shadow: -3px 0px 1.5px rgba(0,0,0,0.95);
+        position: relative;
+        top: 1.5rem;
+    }
+    .noticiasContenedor
+    {        
+        height: 6rem;
+    }
+}
+@media only screen and (min-width:481px) and (max-width:768px)
+{
+    .parrafoNoticias
+    {
+        font-size: 1.3rem;
+        position: relative;
+        top: 2.2rem;       
+    }
+    .noticiasContenedor
+    {
+        height: 8rem;
+    }
+}
+@media only screen and (min-width:769px) and (max-width:1920px)
+{
+    .parrafoNoticias
+    {
+        font-size: 2rem;        
+    }
+    .noticiasContenedor
+    {
+        height: 10rem;
+    }
 }
 //--------------------------------------------------------------------------------------------------------------------------
 /*---Pagina Contacto---*/
-#gridContacto
-{
-    display: grid;
-    grid-template-areas: 
-    "cabecera"
-    "contacto"
-    "pie"
-    ;
+
+.mainContacto
+{    
+    background-color:$azul(15, 17, 31);
+    width: 100%;  
+    margin: 2rem;  
 }
-#mainContacto
+.tituloContacto
 {
-    grid-area: contacto;
-    background-color:rgb(15, 17, 31);
-    width: 100%;
-    height: 90vh;
+    color:$rojoclaro;
+    font-size: 6rem;
+    text-shadow: -6px 0px 3px black;
+    letter-spacing: 0.18rem;
+    text-align: center; 
+    font-family: 'Bangers',sans-serif;        
 }
-#pieContacto
+
+.subtitulosContacto
 {
-    grid-area: pie;    
+    font-size: 3rem;
+    color:$rojoclaro;
+    text-shadow: -6px 0px 3px rgba(0,0,0,0.95);    
+    text-align: center;    
+    margin: 2rem;
 }
-.contacto
+::placeholder
 {
-    color:white;
+    color: white;
     text-align: center;
+}
+.mail
+{
+    height: 3rem;
+    width: 30rem;
+    background-color: $rojo;
+    font-size: 2rem;
+    color: white;
+    position: relative;
+    top:-1rem;
+    
+}
+.sistemaOperativo
+{
+    height: 3rem;
+    width: 30rem;
+    background-color: $rojo;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    position: relative;
+    top:-0.5rem;
+}
+.sistemaOperativo:hover
+{
+    color: grey;
+}
+
+.solicitud
+{
+    background-color: $rojo;
+    font-size: 1.5rem;
+    color: white; 
+}
+.botonContacto
+{
+    height: 3rem;
+    width: 20rem;
+    background-color: $rojo;
+    font-size: 2rem;
+    color: white;  
+    margin: 1rem;  
+}
+.botonContacto:hover
+{
+    color: grey;
+}
+//-------------------------RESPONSIVE CONTACTO------------------------------------------------------------------------------
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+  .tituloContacto
+  {
+    font-size: 3rem;
+  }
+  .subtitulosContacto
+  {
+      font-size: 1rem;
+      margin: 1;
+  }
+  legend
+  {
+      position: relative;
+      left: -2rem;
+  }
+  .mail
+  {
+      width: 15rem;
+      font-size: 1.2rem;
+  }
+  .sistemaOperativo
+  {
+      width: 20rem;
+  }
+  .solicitud 
+  {
+    font-size: 0.7rem;
+  }
+  .botonContacto
+  {
+      margin: 0.5rem;
+      width: 15rem;
+      font-size: 1.5rem;
+  }
+
+}
+@media only screen and (min-width:481px) and (max-width:768px)
+{
+    .tituloContacto
+    {
+        font-size: 4rem;
+    }
+    .subtitulosContacto
+    {
+        font-size: 2rem;
+    }
+    .mail
+    {
+         width: 20rem;
+         font-size: 1.5rem;
+    }
+    .sistemaOperativo
+    {
+         width: 15rem;
+    }
+    .solicitud 
+    {
+        font-size: 1rem;
+    }
+    .botonContacto
+    {
+         margin: 0.5rem;
+         width: 15rem;
+         font-size: 1.5rem;
+    }
+    
+}
+@media only screen and (min-width:769px) and (max-width:1920px)
+{
+    .tituloContacto
+    {
+        font-size: 5rem;
+    }
+    .subtitulosContacto
+    {
+        font-size: 2.5rem;
+    }
 }

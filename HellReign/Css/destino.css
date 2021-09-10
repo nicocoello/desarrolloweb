@@ -43,28 +43,36 @@
     top: 0.31rem; }
 
 /*---Index---*/
-main {
+.main {
   background-color: #040821;
-  width: 100%; }
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.mainContenedor {
+  display: block;
+  text-align: center;
+  justify-content: flex-end; }
 
 .titulo {
-  color: #851010;
+  color: #8A0E0E;
   font-size: 6.25rem;
   text-shadow: -6px 0px 3px black;
   letter-spacing: 0.18rem;
   text-align: center;
   position: relative;
-  top: 5.62rem;
   z-index: 1; }
+
+video {
+  width: 100%; }
 
 .subtitulos {
   color: #8A0E0E;
-  font-size: 4.37rem;
+  font-size: 5.5rem;
   text-shadow: -6px 0px 3px black;
   letter-spacing: 0.18rem;
   text-align: center;
-  position: relative;
-  top: 12.5rem;
   font-family: 'Bangers',sans-serif; }
 
 .imagenBkg {
@@ -81,7 +89,6 @@ main {
   letter-spacing: 0.18rem;
   text-align: center;
   position: relative;
-  top: 43.75rem;
   z-index: 1; }
 
 .parrafoPresentacion {
@@ -91,14 +98,13 @@ main {
   font-family: 'Bangers',sans-serif;
   letter-spacing: 0.18rem;
   text-align: center;
-  position: relative;
-  top: 25rem; }
+  margin: 15rem; }
 
 .textoGrande {
   font-size: 5rem; }
 
 .botonJuegaAhora {
-  background-color: #3b0505;
+  background-color: #2b0404;
   text-align: center;
   font-size: 3.12rem;
   text-shadow: -6px 0px 3px black;
@@ -108,185 +114,170 @@ main {
   padding: 0;
   transition: ease 0.5s;
   position: relative;
-  left: 51.87rem;
-  top: 6.25rem;
   z-index: 1; }
-
-.videoIndex {
-  position: relative;
-  top: -18.75rem;
-  width: 100%; }
-
-.contenidoVideo {
-  background-color: #040821; }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .titulo {
-    font-size: 4rem; }
+    font-size: 3rem; }
   .subtitulos {
-    font-size: 2.1rem; }
+    font-size: 2rem;
+    text-shadow: -3px 0px 1.5px black; }
   .imagenBkg {
-    height: 50vh; }
+    height: 50vh;
+    width: 100%; }
   .parrafoVideo {
-    font-size: 3.5rem; }
+    font-size: 2rem; }
   .parrafoPresentacion {
-    font-size: 1.5rem; }
+    font-size: 1rem;
+    margin: 4rem; }
   .textoGrande {
-    font-size: 2.5rem; }
+    font-size: 1.2rem; }
   .botonJuegaAhora {
     font-size: 1.5rem;
-    width: 7.5rem; } }
+    width: 7.5rem; }
+  .videoIndex {
+    width: 100%; } }
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .titulo {
-    font-size: 5.1rem; }
+    font-size: 5rem; }
   .subtitulos {
-    font-size: 3.2rem; }
+    font-size: 3rem; }
   .imagenBkg {
-    height: 75vh; }
+    height: 75vh;
+    width: 100%; }
   .parrafoVideo {
-    font-size: 4.5rem; }
-  .parrafoPresentacion {
-    font-size: 2.2rem; }
-  .textoGrande {
     font-size: 3.5rem; }
+  .parrafoPresentacion {
+    font-size: 1.5rem;
+    margin: 6rem; }
+  .textoGrande {
+    font-size: 1.7rem; }
   .botonJuegaAhora {
     font-size: 2.4rem;
     width: 15rem;
-    height: 3.4rem; } }
+    height: 3.4rem; }
+  .videoIndex {
+    width: 100%; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1920px) {
+  .parrafoPresentacion {
+    margin: 8rem;
+    font-size: 2.5rem; }
+  .textoGrande {
+    font-size: 3rem; } }
 
 /*---Juega Gratis---*/
-#gridJuegaGratis {
-  display: grid;
-  grid-template-areas: "cabecera" "juegagratis" "pie"; }
-
 .mainJuegaGratis {
-  grid-area: juegagratis;
-  background-color: #040821; }
-
-#pieJuegaGratis {
-  grid-area: pie; }
+  background-color: #040821;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 .bkgJuegaGratis {
   background-image: url("../Imagenes/FondoJugarJuego.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 62.5rem; }
+  height: 60rem; }
 
-.titulosPaginas {
+.bkgJuegaGratis h2 {
+  margin: 25rem; }
+
+.subtituloJuegaGratis {
   color: #8A0E0E;
-  font-size: 4.37rem;
+  font-size: 5rem;
   text-shadow: -6px 0px 3px black;
   letter-spacing: 0.18rem;
   text-align: center;
   font-family: 'Bangers',sans-serif; }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .bkgJuegaGratis {
+    height: 40rem; }
+  .bkgJuegaGratis h2 {
+    margin: 5rem; }
+  .subtituloJuegaGratis {
+    color: #8A0E0E;
+    font-size: 2.5rem;
+    text-shadow: -3px 0px 1.5px black; } }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .bkgJuegaGratis {
+    height: 50rem; }
+  .bkgJuegaGratis h2 {
+    margin: 10rem; }
+  .subtituloJuegaGratis {
+    color: #8A0E0E;
+    font-size: 3.5rem;
+    text-shadow: -6px 0px 3px black; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1920px) {
+  .bkgJuegaGratis h2 {
+    margin: 15rem; } }
+
 /*---Pagina Heroes---*/
-.heroes {
+.mainHeroes {
+  background-color: #040821;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.mainContenedorHeroes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.heroesImagenes {
   width: 25rem;
   height: 12.5rem;
   border: solid 5px white;
   transition: height 1.5s;
-  transition: width 1.5s; }
+  transition: width 1.5s;
+  margin: 2rem; }
 
-.heroes:hover {
+.heroesImagenes:hover {
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.479);
   width: 31.25rem;
   height: 15.62rem; }
 
-.revenant {
-  font-size: 3.1rem;
+.fotoIzq {
+  font-size: 3rem;
   color: white;
   text-shadow: -6px 0px 3px rgba(0, 0, 0, 0.95);
   font-family: 'Bangers',sans-serif;
   letter-spacing: 0.18rem;
-  text-align: center;
-  margin: 3.75rem; }
+  text-align: center; }
 
-.sevarog {
-  font-size: 3.1rem;
+.fotoCentro {
+  font-size: 3rem;
   color: white;
   text-shadow: -6px 0px 3px rgba(0, 0, 0, 0.95);
   font-family: 'Bangers',sans-serif;
   letter-spacing: 0.18rem;
-  text-align: center;
-  margin: 3.75rem; }
+  text-align: center; }
 
-.wraith {
-  font-size: 3.1rem;
+.fotoDer {
+  font-size: 3rem;
   color: white;
   text-shadow: -6px 0px 3px rgba(0, 0, 0, 0.95);
   font-family: 'Bangers',sans-serif;
   letter-spacing: 0.18rem;
-  text-align: center;
-  margin: 3.75rem; }
-
-#gridHeroes {
-  display: grid;
-  grid-template-areas: "cabecera cabecera cabecera" "heroes heroes heroes" "villanos villanos villanos" "pie pie pie";
-  grid-template-columns: 33.3% 33.3% 33.3%;
-  grid-template-rows: 3.1rem 28.12rem 28.12rem 3.1rem; }
-
-#heroes {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  align-items: stretch;
-  grid-area: heroes;
-  background-color: #0f111f;
-  width: 100%;
-  height: 50vh; }
-
-#villanos {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  align-items: stretch;
-  grid-area: villanos;
-  background-color: #0f111f;
-  width: 100%;
-  height: 50vh; }
-
-#cabecera {
-  grid-area: cabecera; }
-
-#pieHeroes {
-  grid-area: pie;
-  position: relative;
-  top: 3.1rem; }
+  text-align: center; }
 
 /*---Pagina Actualizaciones---*/
-#gridActualizaciones {
-  display: grid;
-  grid-template-areas: "cabecera" "actualizaciones" "pie"; }
-
-#mainActualizaciones {
+.mainActualizaciones {
   grid-area: actualizaciones;
-  background-color: #0f111f;
+  background-color: #040821;
   width: 100%;
   height: 90vh; }
-
-#pieActualizaciones {
-  grid-area: pie; }
 
 .padreFlex {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-content: center; }
-
-.actualizaciones {
-  background-color: #2b0404;
-  font-size: 1.25rem;
-  color: grey;
-  text-shadow: -6px 0px 3px rgba(0, 0, 0, 0.95);
-  font-family: 'Bangers',sans-serif;
-  letter-spacing: 0.18rem;
-  text-align: center;
-  position: relative;
-  height: 3.1rem;
-  padding: 0.31rem;
-  margin: 1.25rem; }
 
 .textoActualizaciones {
   text-align: center;
@@ -298,35 +289,28 @@ main {
   top: 3.1rem; }
 
 .accordion-item {
-  background-color: #3b0505; }
+  background-color: #2b0404; }
 
 .accordion-button {
   font-size: 1.56rem;
   color: white;
-  background-color: #3b0505; }
+  background-color: #2b0404; }
 
 .accordion-collapse {
   font-size: 1.25rem;
   color: white;
-  background-color: #3b0505; }
+  background-color: #2b0404; }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .accordion-button {
+    font-size: 1.2rem; }
+  .accordion-collapse {
+    font-size: 0.9rem; } }
 
 /*---Pagina Noticias---*/
-#gridNoticias {
-  display: grid;
-  grid-template-areas: "cabecera" "noticias" "pie"; }
-
-#mainNoticias {
-  grid-area: noticias;
-  background-color: #0f111f;
-  width: 100%;
-  height: 90vh; }
-
-#pieNoticias {
-  grid-area: pie; }
-
-.tabla {
-  color: white;
-  width: 132.81rem; }
+.mainNoticias {
+  background-color: #040821;
+  width: 100%; }
 
 .subtitulosNoticias {
   color: #8A0E0E;
@@ -337,48 +321,155 @@ main {
   font-family: 'Bangers',sans-serif; }
 
 .parrafoNoticias {
-  font-size: 1.9rem;
+  font-size: 2rem;
+  text-align: center;
   color: white;
   text-shadow: -6px 0px 3px rgba(0, 0, 0, 0.95);
   font-family: 'Bangers',sans-serif;
   letter-spacing: 0.18rem;
-  text-align: center;
   position: relative;
-  top: 10px; }
+  top: 3.1rem; }
 
 .noticiasContenedor {
   background-color: #2b0404;
   font-size: 1.25rem;
-  color: grey;
   text-shadow: -6px 0px 3px rgba(0, 0, 0, 0.95);
   font-family: 'Bangers',sans-serif;
   letter-spacing: 0.18rem;
   text-align: center;
-  position: relative;
   height: 3.12rem;
   padding: 0.31rem;
   margin: 1.25rem; }
 
-.tituloTabla {
-  font-size: 2.18rem; }
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .parrafoNoticias {
+    font-size: 1rem;
+    text-shadow: -3px 0px 1.5px rgba(0, 0, 0, 0.95);
+    position: relative;
+    top: 1.5rem; }
+  .noticiasContenedor {
+    height: 6rem; } }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .parrafoNoticias {
+    font-size: 1.3rem;
+    position: relative;
+    top: 2.2rem; }
+  .noticiasContenedor {
+    height: 8rem; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1920px) {
+  .parrafoNoticias {
+    font-size: 2rem; }
+  .noticiasContenedor {
+    height: 10rem; } }
 
 /*---Pagina Contacto---*/
-#gridContacto {
-  display: grid;
-  grid-template-areas: "cabecera" "contacto" "pie"; }
-
-#mainContacto {
-  grid-area: contacto;
-  background-color: #0f111f;
+.mainContacto {
+  background-color: #040821 15, 17, 31;
   width: 100%;
-  height: 90vh; }
+  margin: 2rem; }
 
-#pieContacto {
-  grid-area: pie; }
+.tituloContacto {
+  color: #8A0E0E;
+  font-size: 6rem;
+  text-shadow: -6px 0px 3px black;
+  letter-spacing: 0.18rem;
+  text-align: center;
+  font-family: 'Bangers',sans-serif; }
 
-.contacto {
+.subtitulosContacto {
+  font-size: 3rem;
+  color: #8A0E0E;
+  text-shadow: -6px 0px 3px rgba(0, 0, 0, 0.95);
+  text-align: center;
+  margin: 2rem; }
+
+::placeholder {
   color: white;
   text-align: center; }
+
+.mail {
+  height: 3rem;
+  width: 30rem;
+  background-color: #2b0404;
+  font-size: 2rem;
+  color: white;
+  position: relative;
+  top: -1rem; }
+
+.sistemaOperativo {
+  height: 3rem;
+  width: 30rem;
+  background-color: #2b0404;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: -0.5rem; }
+
+.sistemaOperativo:hover {
+  color: grey; }
+
+.solicitud {
+  background-color: #2b0404;
+  font-size: 1.5rem;
+  color: white; }
+
+.botonContacto {
+  height: 3rem;
+  width: 20rem;
+  background-color: #2b0404;
+  font-size: 2rem;
+  color: white;
+  margin: 1rem; }
+
+.botonContacto:hover {
+  color: grey; }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .tituloContacto {
+    font-size: 3rem; }
+  .subtitulosContacto {
+    font-size: 1rem;
+    margin: 1; }
+  legend {
+    position: relative;
+    left: -2rem; }
+  .mail {
+    width: 15rem;
+    font-size: 1.2rem; }
+  .sistemaOperativo {
+    width: 20rem; }
+  .solicitud {
+    font-size: 0.7rem; }
+  .botonContacto {
+    margin: 0.5rem;
+    width: 15rem;
+    font-size: 1.5rem; } }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .tituloContacto {
+    font-size: 4rem; }
+  .subtitulosContacto {
+    font-size: 2rem; }
+  .mail {
+    width: 20rem;
+    font-size: 1.5rem; }
+  .sistemaOperativo {
+    width: 15rem; }
+  .solicitud {
+    font-size: 1rem; }
+  .botonContacto {
+    margin: 0.5rem;
+    width: 15rem;
+    font-size: 1.5rem; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1920px) {
+  .tituloContacto {
+    font-size: 5rem; }
+  .subtitulosContacto {
+    font-size: 2.5rem; } }
 
 /*---Footer---*/
 .footer {
@@ -433,7 +524,7 @@ body {
 /*---Titulos Paginas---*/
 .titulosPaginas {
   color: #8A0E0E;
-  font-size: 70px;
+  font-size: 6rem;
   text-shadow: -6px 0px 3px black;
   letter-spacing: 0.18rem;
   text-align: center;

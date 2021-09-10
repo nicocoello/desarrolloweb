@@ -19,76 +19,79 @@
 
 <body>
     <!-----------------Header------------------------>
-    <div id="gridHeroes">
-        <header class="encabezado" id="cabecera">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="../Paginas/juegagratis.html">
-                        <p class="textoEncabezado">Juega Ahora</p>
-                    </a>
-                    <button class="navbar-toggler col-sm-12 col-md-12 col-lg-12" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse col-sm-12 col-md-12 col-lg-12" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">
-                                    <p class="textoBotones"> Home </p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../Paginas/heroes.html">
-                                    <p class="textoBotones"> Heroes </p>
-                                </a>
-                            </li>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../Paginas/contacto.html">
-                                    <p class="textoBotones"> Contacto </p>
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">Novedades</a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item"
-                                            href="../Paginas/actualizaciones.html">Actualizaciones</a></li>
-                                    <li><a class="dropdown-item" href="../Paginas/noticias.html">Noticias</a></li>
-
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+    <div class="container-fluid">
+        <div class="row ">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/Paginas/juegagratis.html">
+                    <p class="textoEncabezado">Juega Ahora</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">
+                                <p class="textoBotones"> Home </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Paginas/heroes.html">
+                                <p class="textoBotones"> Heroes </p>
+                            </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Paginas/contacto.html">
+                                <p class="textoBotones"> Contacto </p>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Novedades</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/Paginas/actualizaciones.html">Actualizaciones</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/Paginas/noticias.html">Noticias</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </nav>
-            <h1 class="titulosPaginas">Heroes</h1>
-        </header>
-        <!-----------------Main------------------------>
-        <section id="heroes">
-            <div>
-                <p class="revenant">Revenant</p> <img class="heroes" src="../Imagenes/revenant.jpg" alt="revenant">
-            </div>
-            <div>
-                <p class="sevarog">Sevarog</p> <img class="heroes" src="../Imagenes/sevarog.jpg" alt="sevarog">
-            </div>
-            <div>
-                <p class="wraith">Wraith</p> <img class="heroes" src="../Imagenes/wraith.jpg" alt="wraith">
-            </div>
-        </section>
-        <section id="villanos">
-            <div>
-                <p class="revenant">Rampage</p> <img class="heroes" src="../Imagenes/rampage.jpg" alt="revenant">
-            </div>
-            <div>
-                <p class="sevarog">Steel</p> <img class="heroes" src="../Imagenes/steel.jpg" alt="sevarog">
-            </div>
-            <div>
-                <p class="wraith">Narbash</p> <img class="heroes" src="../Imagenes/narbash.jpg" alt="wraith">
-            </div>
-        </section>
+        </div>
     </div>
+    <!-----------------Main------------------------>
+    <main clas="mainHeroes">
+        <div class="mainContenedorHeroes">
+            <div>
+                <p class="fotoIzq">Revenant</p> <img class="heroesImagenes" src="../Imagenes/revenant.jpg"
+                    alt="revenant">
+            </div>
+            <div>
+                <p class="fotoCentro">Sevarog</p> <img class="heroesImagenes" src="../Imagenes/sevarog.jpg"
+                    alt="sevarog">
+            </div>
+            <div>
+                <p class="fotoDer">Wraith</p> <img class="heroesImagenes" src="../Imagenes/wraith.jpg" alt="wraith">
+            </div>
+        </div>
+        <div class="mainContenedorHeroes">
+            <div>
+                <p class="fotoIzq">Rampage</p> <img class="heroesImagenes" src="../Imagenes/rampage.jpg" alt="revenant">
+            </div>
+            <div>
+                <p class="fotoCentro">Steel</p> <img class="heroesImagenes" src="../Imagenes/steel.jpg" alt="sevarog">
+            </div>
+            <div>
+                <p class="fotoDer">Narbash</p> <img class="heroesImagenes" src="../Imagenes/narbash.jpg" alt="wraith">
+            </div>
+        </div>
+
+
+
+    </main>
     <!-----------------Footer------------------------>
     <footer class="footer">
         <div class="footerContenedor">
