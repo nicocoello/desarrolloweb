@@ -7,7 +7,7 @@
         {  
             background-color: #2b0404;   
             transition: ease 0.5s;
-        }  
+        }    
     #navbarDropdown
         {  
             font-size: 2.3rem;     
@@ -15,8 +15,13 @@
             font-family: 'Bangers',sans-serif;
             color: white;
             position: relative;
-            top: 0.5rem;
+            top: 0.5rem;                   
         }
+        #navbarDropdown:hover
+        {
+            background-color: rgba(0, 0, 0, 0.37);
+        }   
+        
     .textoBotones
         {
             font-family: 'Bangers',sans-serif;
@@ -26,6 +31,12 @@
             position: relative;
             top:0.5rem;
         }
+    .textoBotones:hover
+        {       
+        
+            background-color: rgba(0, 0, 0, 0.37);
+         
+        } 
     .navbar-brand
         {
             font-family: 'Bangers',sans-serif;
@@ -33,6 +44,10 @@
             color: white;       
             background-color:#2b0404;
             transition: ease 0.5s;
+        }
+    .navbar-brand :hover
+        {
+             background-color: rgba(0, 0, 0, 0.37);
         }
     .textoEncabezado
         {
@@ -44,7 +59,7 @@
         }
     .navbar-toggler-icon
         {
-            background-color:#2b0404;
+            background-color:white;
         }
     .dropdown-menu
         {
@@ -57,6 +72,10 @@
             text-align: center;
             position: relative;
             top: 0.31rem;
+        }
+     .dropdown-item:hover
+        {
+            background-color: rgba(0, 0, 0, 0.37);
         }
  }
 
