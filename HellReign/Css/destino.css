@@ -127,57 +127,6 @@ video {
 .botonJuegaAhora:hover {
   background-color: rgba(0, 0, 0, 0.37); }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  .titulo {
-    font-size: 3rem; }
-  .subtitulos {
-    font-size: 2rem;
-    text-shadow: -3px 0px 1.5px black; }
-  .imagenBkg {
-    height: 50vh;
-    width: 100%; }
-  .parrafoVideo {
-    font-size: 2rem; }
-  .parrafoPresentacion {
-    font-size: 1rem;
-    margin: 4rem; }
-  .textoGrande {
-    font-size: 1.2rem; }
-  .botonJuegaAhora {
-    font-size: 1.5rem;
-    width: 7.5rem; }
-  .videoIndex {
-    width: 100%; } }
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .titulo {
-    font-size: 5rem; }
-  .subtitulos {
-    font-size: 3rem; }
-  .imagenBkg {
-    height: 75vh;
-    width: 100%; }
-  .parrafoVideo {
-    font-size: 3.5rem; }
-  .parrafoPresentacion {
-    font-size: 1.5rem;
-    margin: 6rem; }
-  .textoGrande {
-    font-size: 1.7rem; }
-  .botonJuegaAhora {
-    font-size: 2.4rem;
-    width: 15rem;
-    height: 3.4rem; }
-  .videoIndex {
-    width: 100%; } }
-
-@media only screen and (min-width: 769px) and (max-width: 1920px) {
-  .parrafoPresentacion {
-    margin: 8rem;
-    font-size: 2.5rem; }
-  .textoGrande {
-    font-size: 3rem; } }
-
 /*---Juega Gratis---*/
 .mainJuegaGratis {
   background-color: #040821;
@@ -202,30 +151,6 @@ video {
   letter-spacing: 0.18rem;
   text-align: center;
   font-family: 'Bangers',sans-serif; }
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  .bkgJuegaGratis {
-    height: 40rem; }
-  .bkgJuegaGratis h2 {
-    margin: 5rem; }
-  .subtituloJuegaGratis {
-    color: #8A0E0E;
-    font-size: 2.5rem;
-    text-shadow: -3px 0px 1.5px black; } }
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .bkgJuegaGratis {
-    height: 50rem; }
-  .bkgJuegaGratis h2 {
-    margin: 10rem; }
-  .subtituloJuegaGratis {
-    color: #8A0E0E;
-    font-size: 3.5rem;
-    text-shadow: -6px 0px 3px black; } }
-
-@media only screen and (min-width: 769px) and (max-width: 1920px) {
-  .bkgJuegaGratis h2 {
-    margin: 15rem; } }
 
 /*---Pagina Heroes---*/
 .mainHeroes {
@@ -312,12 +237,6 @@ video {
   color: white;
   background-color: #2b0404; }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  .accordion-button {
-    font-size: 1.2rem; }
-  .accordion-collapse {
-    font-size: 0.9rem; } }
-
 /*---Pagina Noticias---*/
 .mainNoticias {
   background-color: #040821;
@@ -351,29 +270,6 @@ video {
   height: 3.12rem;
   padding: 0.31rem;
   margin: 1.25rem; }
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  .parrafoNoticias {
-    font-size: 1rem;
-    text-shadow: -3px 0px 1.5px rgba(0, 0, 0, 0.95);
-    position: relative;
-    top: 1.5rem; }
-  .noticiasContenedor {
-    height: 6rem; } }
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .parrafoNoticias {
-    font-size: 1.3rem;
-    position: relative;
-    top: 2.2rem; }
-  .noticiasContenedor {
-    height: 8rem; } }
-
-@media only screen and (min-width: 769px) and (max-width: 1920px) {
-  .parrafoNoticias {
-    font-size: 2rem; }
-  .noticiasContenedor {
-    height: 10rem; } }
 
 /*---Pagina Contacto---*/
 .mainContacto {
@@ -438,6 +334,148 @@ video {
 .botonContacto:hover {
   color: grey; }
 
+/*---Footer---*/
+.footer {
+  max-height: 7vh;
+  width: 100%;
+  background-color: #2b0404;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.footerContenedor {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center; }
+
+.footerContenedor ul {
+  display: flex; }
+
+.footerContenedor h3 {
+  margin-top: 1rem; }
+
+.textoFooter {
+  font-size: 1.56rem;
+  color: white;
+  text-shadow: -6px 0px 3px rgba(0, 0, 0, 0.95);
+  font-family: 'Bangers',sans-serif;
+  letter-spacing: 0.18rem;
+  text-align: center; }
+
+i {
+  background-color: #040821;
+  color: white;
+  font-size: 1.9rem; }
+
+.footerList li {
+  list-style: none;
+  text-decoration: none;
+  margin: 0.62rem; }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .titulo {
+    font-size: 3rem; }
+  .subtitulos {
+    font-size: 2rem;
+    text-shadow: -3px 0px 1.5px black; }
+  .imagenBkg {
+    height: 50vh;
+    width: 100%; }
+  .parrafoVideo {
+    font-size: 2rem; }
+  .parrafoPresentacion {
+    font-size: 1rem;
+    margin: 4rem; }
+  .textoGrande {
+    font-size: 1.2rem; }
+  .botonJuegaAhora {
+    font-size: 1.5rem;
+    width: 7.5rem; }
+  .videoIndex {
+    width: 100%; } }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .titulo {
+    font-size: 5rem; }
+  .subtitulos {
+    font-size: 3rem; }
+  .imagenBkg {
+    height: 75vh;
+    width: 100%; }
+  .parrafoVideo {
+    font-size: 3.5rem; }
+  .parrafoPresentacion {
+    font-size: 1.5rem;
+    margin: 6rem; }
+  .textoGrande {
+    font-size: 1.7rem; }
+  .botonJuegaAhora {
+    font-size: 2.4rem;
+    width: 15rem;
+    height: 3.4rem; }
+  .videoIndex {
+    width: 100%; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1920px) {
+  .parrafoPresentacion {
+    margin: 8rem;
+    font-size: 2.5rem; }
+  .textoGrande {
+    font-size: 3rem; } }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .bkgJuegaGratis {
+    height: 40rem; }
+  .bkgJuegaGratis h2 {
+    margin: 5rem; }
+  .subtituloJuegaGratis {
+    color: #8A0E0E;
+    font-size: 2.5rem;
+    text-shadow: -3px 0px 1.5px black; } }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .bkgJuegaGratis {
+    height: 50rem; }
+  .bkgJuegaGratis h2 {
+    margin: 10rem; }
+  .subtituloJuegaGratis {
+    color: #8A0E0E;
+    font-size: 3.5rem;
+    text-shadow: -6px 0px 3px black; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1920px) {
+  .bkgJuegaGratis h2 {
+    margin: 15rem; } }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .accordion-button {
+    font-size: 1.2rem; }
+  .accordion-collapse {
+    font-size: 0.9rem; } }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .parrafoNoticias {
+    font-size: 1rem;
+    text-shadow: -3px 0px 1.5px rgba(0, 0, 0, 0.95);
+    position: relative;
+    top: 1.5rem; }
+  .noticiasContenedor {
+    height: 6rem; } }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .parrafoNoticias {
+    font-size: 1.3rem;
+    position: relative;
+    top: 2.2rem; }
+  .noticiasContenedor {
+    height: 8rem; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1920px) {
+  .parrafoNoticias {
+    font-size: 2rem; }
+  .noticiasContenedor {
+    height: 10rem; } }
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .tituloContacto {
     font-size: 3rem; }
@@ -481,44 +519,6 @@ video {
     font-size: 5rem; }
   .subtitulosContacto {
     font-size: 2.5rem; } }
-
-/*---Footer---*/
-.footer {
-  max-height: 7vh;
-  width: 100%;
-  background-color: #2b0404;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-.footerContenedor {
-  display: flex;
-  justify-content: flex-end;
-  text-align: center; }
-
-.footerContenedor ul {
-  display: flex; }
-
-.footerContenedor h3 {
-  margin-top: 1rem; }
-
-.textoFooter {
-  font-size: 1.56rem;
-  color: white;
-  text-shadow: -6px 0px 3px rgba(0, 0, 0, 0.95);
-  font-family: 'Bangers',sans-serif;
-  letter-spacing: 0.18rem;
-  text-align: center; }
-
-i {
-  background-color: #040821;
-  color: white;
-  font-size: 1.9rem; }
-
-.footerList li {
-  list-style: none;
-  text-decoration: none;
-  margin: 0.62rem; }
 
 /*---Google Fonts---*/
 /*---Parametros Iniciales---*/

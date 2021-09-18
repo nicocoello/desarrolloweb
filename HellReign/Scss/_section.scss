@@ -100,99 +100,6 @@ video
 {
     background-color: rgba(0, 0, 0, 0.37);
 }
-
-//-------------------------RESPONSIVE INDEX--------------------------------------------------------------------------------
-@media only screen and (min-width:320px) and (max-width:480px)
-{
-    .titulo
-    {
-        font-size: 3rem;                          
-    }
-    .subtitulos
-    {    
-        font-size: 2rem;
-        text-shadow: -3px 0px 1.5px black;         
-    }
-    .imagenBkg
-    {
-        height: 50vh;
-        width: 100%;
-    }
-    .parrafoVideo
-    {
-        font-size: 2rem;                     
-    }
-    .parrafoPresentacion
-    {
-        font-size: 1rem; 
-        margin:4rem;
-    }
-    .textoGrande
-    {
-        font-size: 1.2rem;
-    }
-    .botonJuegaAhora
-    {
-        font-size: 1.5rem;
-        width:7.5rem;                                    
-    }
-    .videoIndex
-    {
-        width: 100%;        
-    }
-}
-@media only screen and (min-width:481px) and (max-width:768px)
-{
-    .titulo
-    {
-        font-size: 5rem;       
-    }
-    .subtitulos
-    {    
-        font-size: 3rem; 
-    }
-    .imagenBkg
-    {
-        height: 75vh;
-        width: 100%;
-    }
-    .parrafoVideo
-    {
-        font-size: 3.5rem; 
-    }
-    .parrafoPresentacion
-    {
-        font-size: 1.5rem; 
-        margin: 6rem;
-    }
-    .textoGrande
-    {
-        font-size: 1.7rem;
-    }
-    .botonJuegaAhora
-    {
-        font-size: 2.4rem;
-        width: 15rem;
-        height: 3.4rem;
-    }
-    .videoIndex
-    {
-        width: 100%;
-    }
-}
-@media only screen and (min-width:769px) and (max-width:1920px)
-{
-    .parrafoPresentacion
-    {
-        margin:8rem;
-        font-size: 2.5rem;
-    }
-    .textoGrande
-    {
-        font-size: 3rem;
-    }
-}
-
 //--------------------------------------------------------------------------------------------------------------------------
 
 /*---Juega Gratis---*/
@@ -223,49 +130,6 @@ video
     letter-spacing: 0.18rem;
     text-align: center; 
     font-family: 'Bangers',sans-serif;
-}
-//-------------------------RESPONSIVE JUEGA GRATIS--------------------------------------------------------------------------
-@media only screen and (min-width:320px) and (max-width:480px)
-{
-    .bkgJuegaGratis
-    {
-        height: 40rem;
-    }
-    .bkgJuegaGratis h2
-    {
-        margin: 5rem;        
-    }
-    .subtituloJuegaGratis
-    {
-        color:$rojoclaro;
-        font-size: 2.5rem;
-        text-shadow: -3px 0px 1.5px black;        
-    }
-
-}
-@media only screen and (min-width:481px) and (max-width:768px)
-{
-    .bkgJuegaGratis
-    {
-        height: 50rem;
-    }
-    .bkgJuegaGratis h2
-    {
-        margin: 10rem;        
-    }
-    .subtituloJuegaGratis
-    {
-        color:$rojoclaro;
-        font-size: 3.5rem;
-        text-shadow: -6px 0px 3px black;        
-    }
-}
-@media only screen and (min-width:769px) and (max-width:1920px)
-{   
-    .bkgJuegaGratis h2
-    {
-        margin: 15rem;        
-    }    
 }
 
 //--------------------------------------------------------------------------------------------------------------------------
@@ -374,18 +238,7 @@ video
     color: white;    
     background-color: $rojo;
 }
-//-------------------------RESPONSIVE ACTUALIZACIONES-----------------------------------------------------------------------
-@media only screen and (min-width:320px) and (max-width:480px)
-{
-    .accordion-button
-    {   
-    font-size: 1.2rem;    
-    }
-.accordion-collapse
-    {    
-    font-size: 0.9rem;    
-    }
-}
+
 //--------------------------------------------------------------------------------------------------------------------------
 
 /*---Pagina Noticias---*/
@@ -428,45 +281,6 @@ video
     height: 3.12rem;    
     padding:0.31rem;
     margin: 1.25rem;
-}
-//-------------------------RESPONSIVE NOTICIAS------------------------------------------------------------------------------
-@media only screen and (min-width:320px) and (max-width:480px)
-{
-    .parrafoNoticias
-    {
-        font-size: 1rem;
-        text-shadow: -3px 0px 1.5px rgba(0,0,0,0.95);
-        position: relative;
-        top: 1.5rem;
-    }
-    .noticiasContenedor
-    {        
-        height: 6rem;
-    }
-}
-@media only screen and (min-width:481px) and (max-width:768px)
-{
-    .parrafoNoticias
-    {
-        font-size: 1.3rem;
-        position: relative;
-        top: 2.2rem;       
-    }
-    .noticiasContenedor
-    {
-        height: 8rem;
-    }
-}
-@media only screen and (min-width:769px) and (max-width:1920px)
-{
-    .parrafoNoticias
-    {
-        font-size: 2rem;        
-    }
-    .noticiasContenedor
-    {
-        height: 10rem;
-    }
 }
 //--------------------------------------------------------------------------------------------------------------------------
 /*---Pagina Contacto---*/
@@ -543,84 +357,4 @@ video
 .botonContacto:hover
 {
     color: grey;
-}
-//-------------------------RESPONSIVE CONTACTO------------------------------------------------------------------------------
-@media only screen and (min-width:320px) and (max-width:480px)
-{
-  .tituloContacto
-  {
-    font-size: 3rem;
-  }
-  .subtitulosContacto
-  {
-      font-size: 1rem;
-      margin: 1;
-  }
-  legend
-  {
-      position: relative;
-      left: -2rem;
-  }
-  .mail
-  {
-      width: $widthMail/2;
-      font-size: 1.2rem;
-  }
-  .sistemaOperativo
-  {
-      width: 20rem;
-  }
-  .solicitud 
-  {
-    font-size: 0.7rem;
-  }
-  .botonContacto
-  {
-      margin: 0.5rem;
-      width: 15rem;
-      font-size: 1.5rem;
-  }
-
-}
-@media only screen and (min-width:481px) and (max-width:768px)
-{
-    .tituloContacto
-    {
-        font-size: 4rem;
-    }
-    .subtitulosContacto
-    {
-        font-size: 1.5rem;
-    }
-    .mail
-    {
-        width: $widthMail/2;
-        font-size: 1.2rem;
-    }
-    .sistemaOperativo
-    {
-         width: 15rem;
-    }
-    .solicitud 
-    {
-        font-size: 1rem;
-    }
-    .botonContacto
-    {
-         margin: 0.5rem;
-         width: 15rem;
-         font-size: 1.5rem;
-    }
-    
-}
-@media only screen and (min-width:769px) and (max-width:1920px)
-{
-    .tituloContacto
-    {
-        font-size: 5rem;
-    }
-    .subtitulosContacto
-    {
-        font-size: 2.5rem;
-    }
 }
