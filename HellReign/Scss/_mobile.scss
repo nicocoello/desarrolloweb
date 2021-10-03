@@ -143,6 +143,10 @@
     {    
     font-size: 0.9rem;    
     }
+    .subtituloNoticias
+    {
+        font-size: 2rem;
+    }
 }
 //-------------------------RESPONSIVE NOTICIAS------------------------------------------------------------------------------
 @media only screen and (min-width:320px) and (max-width:480px)
@@ -158,6 +162,7 @@
     {        
         height: 6rem;
     }
+    
 }
 @media only screen and (min-width:481px) and (max-width:768px)
 {
@@ -219,7 +224,10 @@
       width: 15rem;
       font-size: 1.5rem;
   }
-
+  .mainContacto
+  {
+      margin: 0;
+  }
 }
 @media only screen and (min-width:481px) and (max-width:768px)
 {
@@ -250,6 +258,7 @@
          width: 15rem;
          font-size: 1.5rem;
     }
+    
     
 }
 @media only screen and (min-width:769px) and (max-width:1920px)
