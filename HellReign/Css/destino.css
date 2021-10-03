@@ -81,7 +81,9 @@ video {
   text-shadow: -6px 0px 3px black;
   letter-spacing: 0.18rem;
   text-align: center;
-  font-family: 'Bangers',sans-serif; }
+  font-family: 'Bangers',sans-serif;
+  position: relative;
+  top: 5rem; }
 
 .imagenBkg {
   background-image: url("../Imagenes/fondoindex.jpg");
@@ -377,7 +379,9 @@ i {
     font-size: 3rem; }
   .subtitulos {
     font-size: 2rem;
-    text-shadow: -3px 0px 1.5px black; }
+    text-shadow: -3px 0px 1.5px black;
+    position: relative;
+    top: 1rem; }
   .imagenBkg {
     height: 50vh;
     width: 100%; }
@@ -385,7 +389,9 @@ i {
     font-size: 2rem; }
   .parrafoPresentacion {
     font-size: 1rem;
-    margin: 4rem; }
+    margin: 4rem;
+    position: relative;
+    top: -2rem; }
   .textoGrande {
     font-size: 1.2rem; }
   .botonJuegaAhora {
@@ -398,7 +404,9 @@ i {
   .titulo {
     font-size: 5rem; }
   .subtitulos {
-    font-size: 3rem; }
+    font-size: 3rem;
+    position: relative;
+    top: 2rem; }
   .imagenBkg {
     height: 75vh;
     width: 100%; }
@@ -408,7 +416,7 @@ i {
     font-size: 1.5rem;
     margin: 6rem; }
   .textoGrande {
-    font-size: 1.7rem; }
+    font-size: 2rem; }
   .botonJuegaAhora {
     font-size: 2.4rem;
     width: 15rem;
@@ -416,7 +424,7 @@ i {
   .videoIndex {
     width: 100%; } }
 
-@media only screen and (min-width: 769px) and (max-width: 1920px) {
+@media only screen and (min-width: 769px) and (max-width: 1300px) {
   .parrafoPresentacion {
     margin: 8rem;
     font-size: 2.5rem; }
@@ -523,6 +531,10 @@ i {
     font-size: 5rem; }
   .subtitulosContacto {
     font-size: 2.5rem; } }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .textoFooter {
+    font-size: 1.2rem; } }
 
 /*---Google Fonts---*/
 /*---Parametros Iniciales---*/
