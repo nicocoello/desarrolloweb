@@ -524,13 +524,17 @@ i {
   .botonContacto {
     margin: 0.5rem;
     width: 15rem;
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .mainContacto {
+    margin: 0; } }
 
 @media only screen and (min-width: 769px) and (max-width: 1920px) {
   .tituloContacto {
     font-size: 5rem; }
   .subtitulosContacto {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  .mainContacto {
+    margin: 0rem; } }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .textoFooter {
