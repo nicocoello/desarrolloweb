@@ -124,16 +124,23 @@ video
 {
     margin: 25rem;
 }
-.subtituloJuegaGratis
+.botonDescarga
 {
-    color:$rojoclaro;
-    font-size: 5rem;
-    text-shadow: -6px 0px 3px black;
-    letter-spacing: 0.18rem;
-    text-align: center; 
-    font-family: 'Bangers',sans-serif;
+    background-color:$rojo;
+    text-align:center;
+    font-size: 6rem;  
+    text-shadow: -6px 0px 3px black; 
+    width: 70rem;
+    height: 10rem; 
+    transition: ease 0.5s; 
+    position: relative;
+    top: 15rem;    
+    z-index: 1; 
 }
-
+.botonDescarga:hover
+{
+    background-color: #04082196;
+}
 //--------------------------------------------------------------------------------------------------------------------------
 /*---Pagina Heroes---*/
 .mainHeroes

@@ -125,12 +125,15 @@
     {
         margin: 5rem;        
     }
-    .subtituloJuegaGratis
+    .botonDescarga
     {
-        color:$rojoclaro;
-        font-size: 2.5rem;
-        text-shadow: -3px 0px 1.5px black;        
-    }
+        width: 20rem;
+        height:3rem;
+        margin:0;
+        font-size:1.5rem;
+        position: relative;
+        top:10rem;
+    }    
 
 }
 @media only screen and (min-width:481px) and (max-width:768px)
@@ -142,13 +145,16 @@
     .bkgJuegaGratis h2
     {
         margin: 10rem;        
-    }
-    .subtituloJuegaGratis
+    }   
+    .botonDescarga
     {
-        color:$rojoclaro;
-        font-size: 3.5rem;
-        text-shadow: -6px 0px 3px black;        
-    }
+        width: 30rem;
+        height: 5rem;
+        margin:0;
+        font-size:2.5rem;
+        position: relative;
+        top:10rem;
+    }   
 }
 @media only screen and (min-width:769px) and (max-width:1920px)
 {   
