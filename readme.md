@@ -1,0 +1,1 @@
+El sitio web buscara mostrar el videojuego HellReign al mundo. Es un videojuego que actualmente estoy desarrollando con unos compañeros y me parecio una gran idea mostrar un poco en una pagina web. Ademas si en algun momento publicaramos el juego la pagina web nos serviria para promocionarlo y hacerlo mas conocido.
