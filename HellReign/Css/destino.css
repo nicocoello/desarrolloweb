@@ -204,6 +204,10 @@ video {
   letter-spacing: 0.18rem;
   text-align: center; }
 
+#footerHeroes {
+  position: relative;
+  top: 10rem; }
+
 /*---Pagina Actualizaciones---*/
 .mainActualizaciones {
   grid-area: actualizaciones;
@@ -430,6 +434,19 @@ i {
     font-size: 2.5rem; }
   .textoGrande {
     font-size: 3rem; } }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .heroesImagenes {
+    width: 20rem;
+    height: 12.5rem;
+    border: solid 2px white;
+    transition: height 1.5s;
+    transition: width 1.5s;
+    margin: 0; }
+  .heroesImagenes:hover {
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.479);
+    width: 22rem;
+    height: 14rem; } }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .bkgJuegaGratis {

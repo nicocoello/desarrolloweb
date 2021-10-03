@@ -95,6 +95,25 @@
         font-size: 3rem;
     }
 }
+//-------------------------RESPONSIVE HEROES--------------------------------------------------------------------------------
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+    .heroesImagenes
+    {
+        width: 20rem;
+        height: 12.5rem;
+        border: solid 2px white;
+        transition: height 1.5s;
+        transition: width 1.5s; 
+        margin: 0;
+    }
+    .heroesImagenes:hover
+    {
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.479);
+    width: 22rem;
+    height: 14rem;
+    }
+}
 //-------------------------RESPONSIVE JUEGA GRATIS--------------------------------------------------------------------------
 @media only screen and (min-width:320px) and (max-width:480px)
 {
