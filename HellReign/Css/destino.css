@@ -286,9 +286,8 @@ video {
 
 /*---Pagina Contacto---*/
 .mainContacto {
-  background-color: #040821 15, 17, 31;
-  width: 100%;
-  margin: 2rem; }
+  background-color: #040821;
+  width: 100%; }
 
 .tituloContacto {
   color: #8A0E0E;
@@ -302,8 +301,7 @@ video {
   font-size: 3rem;
   color: #8A0E0E;
   text-shadow: -6px 0px 3px rgba(0, 0, 0, 0.95);
-  text-align: center;
-  margin: 2rem; }
+  text-align: center; }
 
 ::placeholder {
   color: white;
@@ -346,6 +344,10 @@ video {
 
 .botonContacto:hover {
   color: grey; }
+
+#footerHeroes {
+  position: relative;
+  top: 5rem; }
 
 /*---Footer---*/
 .footer {

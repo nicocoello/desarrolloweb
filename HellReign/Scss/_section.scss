@@ -301,9 +301,8 @@ video
 
 .mainContacto
 {    
-    background-color:$azul(15, 17, 31);
-    width: 100%;  
-    margin: 2rem;  
+    background-color:$azul;
+    width: 100%;
 }
 .tituloContacto
 {
@@ -321,7 +320,7 @@ video
     color:$rojoclaro;
     text-shadow: -6px 0px 3px rgba(0,0,0,0.95);    
     text-align: center;    
-    margin: 2rem;
+    
 }
 ::placeholder
 {
@@ -371,4 +370,9 @@ video
 .botonContacto:hover
 {
     color: grey;
+}
+#footerHeroes
+{
+    position: relative;
+    top: 5rem;
 }
